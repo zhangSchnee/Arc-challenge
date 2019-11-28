@@ -1,0 +1,47 @@
+python run_multiple_choice.py ^
+--model_type roberta ^
+--task_name arc ^
+--model_name_or_path roberta-base ^
+--do_train ^
+--do_eval ^
+--do_lower_case ^
+--data_dir ./ARC-V1-Feb2018-2/ARC-Easy ^
+--learning_rate 5e-5 ^
+--num_train_epochs 3 ^
+--max_seq_length 256 ^
+--output_dir models_bert/swag_base ^
+--per_gpu_eval_batch_size=2 ^
+--per_gpu_train_batch_size=2 ^
+--gradient_accumulation_steps 2 
+
+
+
+
+python index.py ^
+	ARC_Corpus.txt ^
+	arc_corpus 
+	
+	
+python run_arc.py ^
+--model_type roberta ^
+--task_name arc ^
+--model_name_or_path roberta-base ^
+--do_train ^
+--do_eval ^
+--do_lower_case ^
+--data_dir ./ARC-V1-Feb2018-2/ARC-Easy ^
+--learning_rate 5e-5 ^
+--num_train_epochs 3 ^
+--max_seq_length 80 ^
+--output_dir models_bert/swag_base ^
+--per_gpu_eval_batch_size=16 ^
+--per_gpu_train_batch_size=16 ^
+--gradient_accumulation_steps 2 
+
+            print('----------------------')
+            print(text_a)
+            print(text_b)
+            print('----------------------')
+			
+
+Pronounced silver metallic overlay to area between veins of bronze foliage on compact clumping plants. Coal is formed from plant remains that have been compacted, hardened, chemically altered, and metamorphosed by heat and pressure over geologic time. DEAR READER: Varicose veins often appear during pregnancy as the enlarging fetus presses against the pelvic veins, causing a pressure buildup in the leg veins, which then stretch and form permanent varicosities. DEAR READER: Varicose veins often appear during pregnancy as the enlarging fetus presses against the pelvic veins, causing a pressure buildup in the leg veins, which then balloon out, stretch, and form permanent varicosities. Blood clots often form following trauma or surgery and, if a vein is blocked, back pressure causes the vein to swell, impedes circulation and the dead cells which rapidly form on the vein wall are replaced with fibrous, inelastic scar tissue. These deposits were formed by evaporation, sedimentation and compaction over geological time. It is formed from plant remains that have been compacted, indurated, chemically altered, and metamorphosed by heat and pressure during geologic time. Low pressure moderate pressure High pressure 7) Supergene enrichment is a weathering process which will affect the value of a gold deposit more than a copper deposit? and pressure oxidation in processing refractory gold and silver ores. Processes which include a step of compacting or forming an article by the use of positive pressure."

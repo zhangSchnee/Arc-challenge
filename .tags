@@ -1,0 +1,990 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALL_MODELS	.\contrib\run_swag.py	/^                  for conf in [BertConfig]), ())$/;"	v
+ALL_MODELS	.\distillation\run_squad_w_distillation.py	/^                  for conf in (BertConfig, XLNetConfig, XLMConfig)), ())$/;"	v
+ALL_MODELS	.\run_bertology.py	/^from run_glue import set_seed, load_and_cache_examples, ALL_MODELS, MODEL_CLASSES$/;"	i
+ALL_MODELS	.\run_generation.py	/^ALL_MODELS = sum((tuple(conf.pretrained_config_archive_map.keys()) for conf in (GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig, XLMConfig, CTRLConfig)), ())$/;"	v
+ALL_MODELS	.\run_glue.py	/^ALL_MODELS = sum((tuple(conf.pretrained_config_archive_map.keys()) for conf in (BertConfig, XLNetConfig, XLMConfig, $/;"	v
+ALL_MODELS	.\run_multiple_choice.py	/^ALL_MODELS = sum((tuple(conf.pretrained_config_archive_map.keys()) for conf in (BertConfig, XLNetConfig, RobertaConfig)), ())$/;"	v
+ALL_MODELS	.\run_ner.py	/^ALL_MODELS = sum($/;"	v
+ALL_MODELS	.\run_squad.py	/^                  for conf in (BertConfig, XLNetConfig, XLMConfig)), ())$/;"	v
+Adam	.\run_summarization_finetuning.py	/^from torch.optim import Adam$/;"	i
+AdamW	.\contrib\run_swag.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+AdamW	.\distillation\distiller.py	/^from torch.optim import AdamW$/;"	i
+AdamW	.\distillation\run_squad_w_distillation.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+AdamW	.\run_glue.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+AdamW	.\run_lm_finetuning.py	/^from transformers import (WEIGHTS_NAME, AdamW, WarmupLinearSchedule,$/;"	i
+AdamW	.\run_multiple_choice.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+AdamW	.\run_ner.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+AdamW	.\run_squad.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+ArcProcessor	.\utils_multiple_choice.py	/^class ArcProcessor(DataProcessor):$/;"	c
+AutoConfig	.\benchmarks.py	/^from transformers import AutoConfig, AutoTokenizer$/;"	i
+AutoModel	.\benchmarks.py	/^    from transformers import AutoModel$/;"	i
+AutoTokenizer	.\benchmarks.py	/^from transformers import AutoConfig, AutoTokenizer$/;"	i
+BATCH_SIZE	.\run_tf_glue.py	/^BATCH_SIZE = 32$/;"	v
+BasicTokenizer	.\utils_squad.py	/^from transformers.tokenization_bert import BasicTokenizer, whitespace_tokenize$/;"	i
+BatchSampler	.\distillation\distiller.py	/^from torch.utils.data import RandomSampler, BatchSampler, DataLoader$/;"	i
+BatchSampler	.\distillation\grouped_batch_sampler.py	/^from torch.utils.data.sampler import BatchSampler, Sampler$/;"	i
+BertConfig	.\contrib\run_swag.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+BertConfig	.\distillation\run_squad_w_distillation.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+BertConfig	.\distillation\train.py	/^from transformers import BertConfig, BertForMaskedLM, BertTokenizer$/;"	i
+BertConfig	.\run_glue.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+BertConfig	.\run_multiple_choice.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+BertConfig	.\run_ner.py	/^from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer$/;"	i
+BertConfig	.\run_squad.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+BertConfig	.\run_tf_glue.py	/^from transformers import BertTokenizer, TFBertForSequenceClassification, BertConfig, glue_convert_examples_to_features, BertForSequenceClassification, glue_processors$/;"	i
+BertForMaskedLM	.\distillation\scripts\extract.py	/^from transformers import BertForMaskedLM, RobertaForMaskedLM, GPT2LMHeadModel$/;"	i
+BertForMaskedLM	.\distillation\scripts\extract_distilbert.py	/^from transformers import BertForMaskedLM, RobertaForMaskedLM$/;"	i
+BertForMaskedLM	.\distillation\train.py	/^from transformers import BertConfig, BertForMaskedLM, BertTokenizer$/;"	i
+BertForSequenceClassification	.\run_tf_glue.py	/^from transformers import BertTokenizer, TFBertForSequenceClassification, BertConfig, glue_convert_examples_to_features, BertForSequenceClassification, glue_processors$/;"	i
+BertForTokenClassification	.\run_ner.py	/^from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer$/;"	i
+BertSumOptimizer	.\run_summarization_finetuning.py	/^class BertSumOptimizer(object):$/;"	c
+BertTokenizer	.\distillation\scripts\binarized_data.py	/^from transformers import BertTokenizer, RobertaTokenizer, GPT2Tokenizer$/;"	i
+BertTokenizer	.\distillation\train.py	/^from transformers import BertConfig, BertForMaskedLM, BertTokenizer$/;"	i
+BertTokenizer	.\run_ner.py	/^from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer$/;"	i
+BertTokenizer	.\run_tf_glue.py	/^from transformers import BertTokenizer, TFBertForSequenceClassification, BertConfig, glue_convert_examples_to_features, BertForSequenceClassification, glue_processors$/;"	i
+CNNDailyMailDataset	.\utils_summarization.py	/^class CNNDailyMailDataset(Dataset):$/;"	c
+CTRLConfig	.\run_generation.py	/^from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig, XLMConfig, CTRLConfig$/;"	i
+CTRLLMHeadModel	.\run_generation.py	/^from transformers import CTRLLMHeadModel, CTRLTokenizer$/;"	i
+CTRLTokenizer	.\run_generation.py	/^from transformers import CTRLLMHeadModel, CTRLTokenizer$/;"	i
+Counter	.\distillation\scripts\token_counts.py	/^from collections import Counter$/;"	i
+CrossEntropyLoss	.\run_bertology.py	/^from torch.nn import CrossEntropyLoss, MSELoss$/;"	i
+CrossEntropyLoss	.\run_ner.py	/^from torch.nn import CrossEntropyLoss$/;"	i
+DataLoader	.\contrib\run_openai_gpt.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+DataLoader	.\contrib\run_swag.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+DataLoader	.\distillation\distiller.py	/^from torch.utils.data import RandomSampler, BatchSampler, DataLoader$/;"	i
+DataLoader	.\distillation\run_squad_w_distillation.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+DataLoader	.\run_bertology.py	/^from torch.utils.data import DataLoader, SequentialSampler, TensorDataset, Subset$/;"	i
+DataLoader	.\run_glue.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+DataLoader	.\run_lm_finetuning.py	/^from torch.utils.data import DataLoader, Dataset, SequentialSampler, RandomSampler$/;"	i
+DataLoader	.\run_multiple_choice.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+DataLoader	.\run_ner.py	/^from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, TensorDataset$/;"	i
+DataLoader	.\run_squad.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+DataLoader	.\run_summarization_finetuning.py	/^from torch.utils.data import DataLoader, RandomSampler, SequentialSampler$/;"	i
+DataProcessor	.\utils_multiple_choice.py	/^class DataProcessor(object):$/;"	c
+Dataset	.\distillation\lm_seqs_dataset.py	/^from torch.utils.data import Dataset$/;"	i
+Dataset	.\run_lm_finetuning.py	/^from torch.utils.data import DataLoader, Dataset, SequentialSampler, RandomSampler$/;"	i
+Dataset	.\utils_summarization.py	/^from torch.utils.data import Dataset$/;"	i
+DistilBertConfig	.\distillation\train.py	/^from transformers import DistilBertConfig, DistilBertForMaskedLM, DistilBertTokenizer$/;"	i
+DistilBertForMaskedLM	.\distillation\train.py	/^from transformers import DistilBertConfig, DistilBertForMaskedLM, DistilBertTokenizer$/;"	i
+DistilBertTokenizer	.\distillation\train.py	/^from transformers import DistilBertConfig, DistilBertForMaskedLM, DistilBertTokenizer$/;"	i
+Distiller	.\distillation\distiller.py	/^class Distiller:$/;"	c
+Distiller	.\distillation\train.py	/^from distiller import Distiller$/;"	i
+DistributedDataParallel	.\distillation\distiller.py	/^                from apex.parallel import DistributedDataParallel$/;"	i
+DistributedDataParallel	.\distillation\distiller.py	/^                from torch.nn.parallel import DistributedDataParallel$/;"	i
+DistributedSampler	.\contrib\run_swag.py	/^from torch.utils.data.distributed import DistributedSampler$/;"	i
+DistributedSampler	.\distillation\distiller.py	/^from torch.utils.data.distributed import DistributedSampler$/;"	i
+DistributedSampler	.\distillation\run_squad_w_distillation.py	/^from torch.utils.data.distributed import DistributedSampler$/;"	i
+DistributedSampler	.\run_bertology.py	/^from torch.utils.data.distributed import DistributedSampler$/;"	i
+DistributedSampler	.\run_glue.py	/^from torch.utils.data.distributed import DistributedSampler$/;"	i
+DistributedSampler	.\run_lm_finetuning.py	/^from torch.utils.data.distributed import DistributedSampler$/;"	i
+DistributedSampler	.\run_multiple_choice.py	/^from torch.utils.data.distributed import DistributedSampler$/;"	i
+DistributedSampler	.\run_ner.py	/^from torch.utils.data.distributed import DistributedSampler$/;"	i
+DistributedSampler	.\run_squad.py	/^from torch.utils.data.distributed import DistributedSampler$/;"	i
+EPOCHS	.\run_tf_glue.py	/^EPOCHS = 3$/;"	v
+EVAL_BATCH_SIZE	.\run_tf_glue.py	/^EVAL_BATCH_SIZE = BATCH_SIZE * 2$/;"	v
+EVAL_OPTS	.\distillation\run_squad_w_distillation.py	/^from ..utils_squad_evaluate import EVAL_OPTS, main as evaluate_on_squad$/;"	i
+EVAL_OPTS	.\run_squad.py	/^from utils_squad_evaluate import EVAL_OPTS, main as evaluate_on_squad$/;"	i
+EVAL_OPTS	.\utils_squad_evaluate.py	/^class EVAL_OPTS():$/;"	c
+Elasticsearch	.\ARC-V1-Feb2018-2\index.py	/^from elasticsearch import Elasticsearch$/;"	i
+ExamplesTests	.\test_examples.py	/^class ExamplesTests(unittest.TestCase):$/;"	c
+F	.\distillation\distiller.py	/^import torch.nn.functional as F$/;"	i
+F	.\distillation\run_squad_w_distillation.py	/^import torch.nn.functional as F$/;"	i
+F	.\run_generation.py	/^import torch.nn.functional as F$/;"	i
+GPT2Config	.\distillation\train.py	/^from transformers import GPT2Config, GPT2LMHeadModel, GPT2Tokenizer$/;"	i
+GPT2Config	.\run_generation.py	/^from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig, XLMConfig, CTRLConfig$/;"	i
+GPT2LMHeadModel	.\distillation\scripts\extract.py	/^from transformers import BertForMaskedLM, RobertaForMaskedLM, GPT2LMHeadModel$/;"	i
+GPT2LMHeadModel	.\distillation\train.py	/^from transformers import GPT2Config, GPT2LMHeadModel, GPT2Tokenizer$/;"	i
+GPT2LMHeadModel	.\run_generation.py	/^from transformers import GPT2LMHeadModel, GPT2Tokenizer$/;"	i
+GPT2Tokenizer	.\distillation\scripts\binarized_data.py	/^from transformers import BertTokenizer, RobertaTokenizer, GPT2Tokenizer$/;"	i
+GPT2Tokenizer	.\distillation\train.py	/^from transformers import GPT2Config, GPT2LMHeadModel, GPT2Tokenizer$/;"	i
+GPT2Tokenizer	.\run_generation.py	/^from transformers import GPT2LMHeadModel, GPT2Tokenizer$/;"	i
+GetSen	.\GetSens.py	/^def GetSen(lala):$/;"	f
+GroupedBatchSampler	.\distillation\distiller.py	/^from grouped_batch_sampler import GroupedBatchSampler, create_lengths_groups$/;"	i
+GroupedBatchSampler	.\distillation\grouped_batch_sampler.py	/^class GroupedBatchSampler(BatchSampler):$/;"	c
+InputExample	.\utils_multiple_choice.py	/^class InputExample(object):$/;"	c
+InputExample	.\utils_ner.py	/^class InputExample(object):$/;"	c
+InputFeatures	.\contrib\run_swag.py	/^class InputFeatures(object):$/;"	c
+InputFeatures	.\utils_multiple_choice.py	/^class InputFeatures(object):$/;"	c
+InputFeatures	.\utils_ner.py	/^class InputFeatures(object):$/;"	c
+InputFeatures	.\utils_squad.py	/^class InputFeatures(object):$/;"	c
+List	.\benchmarks.py	/^from typing import List$/;"	i
+List	.\utils_multiple_choice.py	/^from typing import List$/;"	i
+LmSeqsDataset	.\distillation\distiller.py	/^from lm_seqs_dataset import LmSeqsDataset$/;"	i
+LmSeqsDataset	.\distillation\lm_seqs_dataset.py	/^class LmSeqsDataset(Dataset):$/;"	c
+LmSeqsDataset	.\distillation\train.py	/^from lm_seqs_dataset import LmSeqsDataset$/;"	i
+MAX_LENGTH	.\run_generation.py	/^MAX_LENGTH = int(10000)  # Hardcoded max length to avoid infinite loop$/;"	v
+MODEL_CLASSES	.\contrib\run_swag.py	/^MODEL_CLASSES = {$/;"	v
+MODEL_CLASSES	.\distillation\run_squad_w_distillation.py	/^MODEL_CLASSES = {$/;"	v
+MODEL_CLASSES	.\distillation\train.py	/^MODEL_CLASSES = {$/;"	v
+MODEL_CLASSES	.\run_bertology.py	/^from run_glue import set_seed, load_and_cache_examples, ALL_MODELS, MODEL_CLASSES$/;"	i
+MODEL_CLASSES	.\run_generation.py	/^MODEL_CLASSES = {$/;"	v
+MODEL_CLASSES	.\run_glue.py	/^MODEL_CLASSES = {$/;"	v
+MODEL_CLASSES	.\run_lm_finetuning.py	/^MODEL_CLASSES = {$/;"	v
+MODEL_CLASSES	.\run_multiple_choice.py	/^MODEL_CLASSES = {$/;"	v
+MODEL_CLASSES	.\run_ner.py	/^MODEL_CLASSES = {$/;"	v
+MODEL_CLASSES	.\run_squad.py	/^MODEL_CLASSES = {$/;"	v
+MSELoss	.\run_bertology.py	/^from torch.nn import CrossEntropyLoss, MSELoss$/;"	i
+MULTIPLE_CHOICE_TASKS_NUM_LABELS	.\utils_multiple_choice.py	/^MULTIPLE_CHOICE_TASKS_NUM_LABELS = {$/;"	v
+MemTracker	.\gpu_mem_track.py	/^class MemTracker(object):$/;"	c
+MemTracker	.\run_multiple_choice.py	/^from gpu_mem_track import  MemTracker$/;"	i
+OPTS	.\utils_squad_evaluate.py	/^  OPTS = parse_args()$/;"	v
+OPTS	.\utils_squad_evaluate.py	/^OPTS = None$/;"	v
+OpenAIGPTConfig	.\run_generation.py	/^from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig, XLMConfig, CTRLConfig$/;"	i
+OpenAIGPTDoubleHeadsModel	.\contrib\run_openai_gpt.py	/^from transformers import (OpenAIGPTDoubleHeadsModel, OpenAIGPTTokenizer,$/;"	i
+OpenAIGPTLMHeadModel	.\run_generation.py	/^from transformers import OpenAIGPTLMHeadModel, OpenAIGPTTokenizer$/;"	i
+OpenAIGPTTokenizer	.\contrib\run_openai_gpt.py	/^from transformers import (OpenAIGPTDoubleHeadsModel, OpenAIGPTTokenizer,$/;"	i
+OpenAIGPTTokenizer	.\run_generation.py	/^from transformers import OpenAIGPTLMHeadModel, OpenAIGPTTokenizer$/;"	i
+PreTrainedTokenizer	.\utils_multiple_choice.py	/^from transformers import PreTrainedTokenizer$/;"	i
+ROCSTORIES_URL	.\contrib\run_openai_gpt.py	/^ROCSTORIES_URL = "https:\/\/s3.amazonaws.com\/datasets.huggingface.co\/ROCStories.tar.gz"$/;"	v
+RaceProcessor	.\utils_multiple_choice.py	/^class RaceProcessor(DataProcessor):$/;"	c
+RandomSampler	.\contrib\run_openai_gpt.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+RandomSampler	.\contrib\run_swag.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+RandomSampler	.\distillation\distiller.py	/^from torch.utils.data import RandomSampler, BatchSampler, DataLoader$/;"	i
+RandomSampler	.\distillation\run_squad_w_distillation.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+RandomSampler	.\run_glue.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+RandomSampler	.\run_lm_finetuning.py	/^from torch.utils.data import DataLoader, Dataset, SequentialSampler, RandomSampler$/;"	i
+RandomSampler	.\run_multiple_choice.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+RandomSampler	.\run_ner.py	/^from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, TensorDataset$/;"	i
+RandomSampler	.\run_squad.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+RandomSampler	.\run_summarization_finetuning.py	/^from torch.utils.data import DataLoader, RandomSampler, SequentialSampler$/;"	i
+RawResult	.\utils_squad.py	/^RawResult = collections.namedtuple("RawResult",$/;"	v
+RawResultExtended	.\utils_squad.py	/^RawResultExtended = collections.namedtuple("RawResultExtended",$/;"	v
+RobertaConfig	.\distillation\train.py	/^from transformers import RobertaConfig, RobertaForMaskedLM, RobertaTokenizer$/;"	i
+RobertaConfig	.\run_ner.py	/^from transformers import RobertaConfig, RobertaForTokenClassification, RobertaTokenizer$/;"	i
+RobertaForMaskedLM	.\distillation\scripts\extract.py	/^from transformers import BertForMaskedLM, RobertaForMaskedLM, GPT2LMHeadModel$/;"	i
+RobertaForMaskedLM	.\distillation\scripts\extract_distilbert.py	/^from transformers import BertForMaskedLM, RobertaForMaskedLM$/;"	i
+RobertaForMaskedLM	.\distillation\train.py	/^from transformers import RobertaConfig, RobertaForMaskedLM, RobertaTokenizer$/;"	i
+RobertaForTokenClassification	.\run_ner.py	/^from transformers import RobertaConfig, RobertaForTokenClassification, RobertaTokenizer$/;"	i
+RobertaTokenizer	.\distillation\scripts\binarized_data.py	/^from transformers import BertTokenizer, RobertaTokenizer, GPT2Tokenizer$/;"	i
+RobertaTokenizer	.\distillation\train.py	/^from transformers import RobertaConfig, RobertaForMaskedLM, RobertaTokenizer$/;"	i
+RobertaTokenizer	.\run_ner.py	/^from transformers import RobertaConfig, RobertaForTokenClassification, RobertaTokenizer$/;"	i
+Sampler	.\distillation\grouped_batch_sampler.py	/^from torch.utils.data.sampler import BatchSampler, Sampler$/;"	i
+SequentialSampler	.\contrib\run_openai_gpt.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+SequentialSampler	.\contrib\run_swag.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+SequentialSampler	.\distillation\run_squad_w_distillation.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+SequentialSampler	.\run_bertology.py	/^from torch.utils.data import DataLoader, SequentialSampler, TensorDataset, Subset$/;"	i
+SequentialSampler	.\run_glue.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+SequentialSampler	.\run_lm_finetuning.py	/^from torch.utils.data import DataLoader, Dataset, SequentialSampler, RandomSampler$/;"	i
+SequentialSampler	.\run_multiple_choice.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+SequentialSampler	.\run_ner.py	/^from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, TensorDataset$/;"	i
+SequentialSampler	.\run_squad.py	/^from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,$/;"	i
+SequentialSampler	.\run_summarization_finetuning.py	/^from torch.utils.data import DataLoader, RandomSampler, SequentialSampler$/;"	i
+SquadExample	.\utils_squad.py	/^class SquadExample(object):$/;"	c
+Subset	.\run_bertology.py	/^from torch.utils.data import DataLoader, SequentialSampler, TensorDataset, Subset$/;"	i
+SummarizationDataProcessingTest	.\utils_summarization_test.py	/^class SummarizationDataProcessingTest(unittest.TestCase):$/;"	c
+SummaryWriter	.\contrib\run_swag.py	/^    from tensorboardX import SummaryWriter$/;"	i
+SummaryWriter	.\contrib\run_swag.py	/^    from torch.utils.tensorboard import SummaryWriter$/;"	i
+SummaryWriter	.\distillation\distiller.py	/^    from tensorboardX import SummaryWriter$/;"	i
+SummaryWriter	.\distillation\distiller.py	/^    from torch.utils.tensorboard import SummaryWriter$/;"	i
+SummaryWriter	.\distillation\run_squad_w_distillation.py	/^    from tensorboardX import SummaryWriter$/;"	i
+SummaryWriter	.\distillation\run_squad_w_distillation.py	/^    from torch.utils.tensorboard import SummaryWriter$/;"	i
+SummaryWriter	.\run_glue.py	/^    from tensorboardX import SummaryWriter$/;"	i
+SummaryWriter	.\run_glue.py	/^    from torch.utils.tensorboard import SummaryWriter$/;"	i
+SummaryWriter	.\run_lm_finetuning.py	/^    from tensorboardX import SummaryWriter$/;"	i
+SummaryWriter	.\run_lm_finetuning.py	/^    from torch.utils.tensorboard import SummaryWriter$/;"	i
+SummaryWriter	.\run_multiple_choice.py	/^    from tensorboardX import SummaryWriter$/;"	i
+SummaryWriter	.\run_multiple_choice.py	/^    from torch.utils.tensorboard import SummaryWriter$/;"	i
+SummaryWriter	.\run_ner.py	/^from tensorboardX import SummaryWriter$/;"	i
+SummaryWriter	.\run_squad.py	/^    from tensorboardX import SummaryWriter$/;"	i
+SummaryWriter	.\run_squad.py	/^    from torch.utils.tensorboard import SummaryWriter$/;"	i
+SwagExample	.\contrib\run_swag.py	/^class SwagExample(object):$/;"	c
+SwagProcessor	.\utils_multiple_choice.py	/^class SwagProcessor(DataProcessor):$/;"	c
+TASK	.\run_tf_glue.py	/^TASK = "mrpc"$/;"	v
+TFAutoModel	.\benchmarks.py	/^    from transformers import TFAutoModel$/;"	i
+TFBertForSequenceClassification	.\run_tf_glue.py	/^from transformers import BertTokenizer, TFBertForSequenceClassification, BertConfig, glue_convert_examples_to_features, BertForSequenceClassification, glue_processors$/;"	i
+TFDS_TASK	.\run_tf_glue.py	/^    TFDS_TASK = "sst2"$/;"	v
+TFDS_TASK	.\run_tf_glue.py	/^    TFDS_TASK = "stsb"$/;"	v
+TFDS_TASK	.\run_tf_glue.py	/^    TFDS_TASK = TASK$/;"	v
+TYPE	.\ARC-V1-Feb2018-2\index.py	/^    TYPE = "sentence"$/;"	v
+TensorDataset	.\run_bertology.py	/^from torch.utils.data import DataLoader, SequentialSampler, TensorDataset, Subset$/;"	i
+TensorDataset	.\run_ner.py	/^from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, TensorDataset$/;"	i
+TextDataset	.\run_lm_finetuning.py	/^class TextDataset(Dataset):$/;"	c
+TransfoXLConfig	.\run_generation.py	/^from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig, XLMConfig, CTRLConfig$/;"	i
+TransfoXLCorpus	.\contrib\run_transfo_xl.py	/^from transformers import TransfoXLLMHeadModel, TransfoXLCorpus, TransfoXLTokenizer$/;"	i
+TransfoXLLMHeadModel	.\contrib\run_transfo_xl.py	/^from transformers import TransfoXLLMHeadModel, TransfoXLCorpus, TransfoXLTokenizer$/;"	i
+TransfoXLLMHeadModel	.\run_generation.py	/^from transformers import TransfoXLLMHeadModel, TransfoXLTokenizer$/;"	i
+TransfoXLTokenizer	.\contrib\run_transfo_xl.py	/^from transformers import TransfoXLLMHeadModel, TransfoXLCorpus, TransfoXLTokenizer$/;"	i
+TransfoXLTokenizer	.\run_generation.py	/^from transformers import TransfoXLLMHeadModel, TransfoXLTokenizer$/;"	i
+USE_AMP	.\run_tf_glue.py	/^USE_AMP = False$/;"	v
+USE_XLA	.\run_tf_glue.py	/^USE_XLA = False$/;"	v
+WEIGHTS_NAME	.\contrib\run_swag.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+WEIGHTS_NAME	.\distillation\run_squad_w_distillation.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+WEIGHTS_NAME	.\run_bertology.py	/^from transformers import (WEIGHTS_NAME,$/;"	i
+WEIGHTS_NAME	.\run_glue.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+WEIGHTS_NAME	.\run_lm_finetuning.py	/^from transformers import (WEIGHTS_NAME, AdamW, WarmupLinearSchedule,$/;"	i
+WEIGHTS_NAME	.\run_multiple_choice.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+WEIGHTS_NAME	.\run_ner.py	/^from transformers import WEIGHTS_NAME, BertConfig, BertForTokenClassification, BertTokenizer$/;"	i
+WEIGHTS_NAME	.\run_squad.py	/^from transformers import (WEIGHTS_NAME, BertConfig,$/;"	i
+WarmupLinearSchedule	.\contrib\run_swag.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+WarmupLinearSchedule	.\distillation\distiller.py	/^from transformers import WarmupLinearSchedule$/;"	i
+WarmupLinearSchedule	.\distillation\run_squad_w_distillation.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+WarmupLinearSchedule	.\run_glue.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+WarmupLinearSchedule	.\run_lm_finetuning.py	/^from transformers import (WEIGHTS_NAME, AdamW, WarmupLinearSchedule,$/;"	i
+WarmupLinearSchedule	.\run_multiple_choice.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+WarmupLinearSchedule	.\run_ner.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+WarmupLinearSchedule	.\run_squad.py	/^from transformers import AdamW, WarmupLinearSchedule$/;"	i
+XLMConfig	.\run_generation.py	/^from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig, XLMConfig, CTRLConfig$/;"	i
+XLMTokenizer	.\run_generation.py	/^from transformers import XLMWithLMHeadModel, XLMTokenizer$/;"	i
+XLMWithLMHeadModel	.\run_generation.py	/^from transformers import XLMWithLMHeadModel, XLMTokenizer$/;"	i
+XLNetConfig	.\run_generation.py	/^from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig, XLMConfig, CTRLConfig$/;"	i
+XLNetLMHeadModel	.\run_generation.py	/^from transformers import XLNetLMHeadModel, XLNetTokenizer$/;"	i
+XLNetTokenizer	.\run_generation.py	/^from transformers import XLNetLMHeadModel, XLNetTokenizer$/;"	i
+__getitem__	.\distillation\lm_seqs_dataset.py	/^    def __getitem__(self, index):$/;"	m	class:LmSeqsDataset	file:
+__getitem__	.\run_lm_finetuning.py	/^    def __getitem__(self, item):$/;"	m	class:TextDataset	file:
+__getitem__	.\utils_summarization.py	/^    def __getitem__(self, idx):$/;"	m	class:CNNDailyMailDataset	file:
+__init__	.\contrib\run_swag.py	/^    def __init__(self,$/;"	m	class:InputFeatures
+__init__	.\contrib\run_swag.py	/^    def __init__(self,$/;"	m	class:SwagExample
+__init__	.\distillation\distiller.py	/^    def __init__(self,$/;"	m	class:Distiller
+__init__	.\distillation\grouped_batch_sampler.py	/^    def __init__(self, sampler, group_ids, batch_size):$/;"	m	class:GroupedBatchSampler
+__init__	.\distillation\lm_seqs_dataset.py	/^    def __init__(self,$/;"	m	class:LmSeqsDataset
+__init__	.\gpu_mem_track.py	/^    def __init__(self, frame, detail=True, path='', verbose=False, device=0):$/;"	m	class:MemTracker
+__init__	.\run_lm_finetuning.py	/^    def __init__(self, tokenizer, file_path='train', block_size=512):$/;"	m	class:TextDataset
+__init__	.\run_summarization_finetuning.py	/^    def __init__(self, model, lr, warmup_steps, beta_1=0.99, beta_2=0.999, eps=1e-8):$/;"	m	class:BertSumOptimizer
+__init__	.\utils_multiple_choice.py	/^    def __init__(self, example_id, question, contexts, endings, label=None):$/;"	m	class:InputExample
+__init__	.\utils_multiple_choice.py	/^    def __init__(self,$/;"	m	class:InputFeatures
+__init__	.\utils_ner.py	/^    def __init__(self, guid, words, labels):$/;"	m	class:InputExample
+__init__	.\utils_ner.py	/^    def __init__(self, input_ids, input_mask, segment_ids, label_ids):$/;"	m	class:InputFeatures
+__init__	.\utils_squad.py	/^    def __init__(self,$/;"	m	class:InputFeatures
+__init__	.\utils_squad.py	/^    def __init__(self,$/;"	m	class:SquadExample
+__init__	.\utils_squad_evaluate.py	/^  def __init__(self, data_file, pred_file, out_file="",$/;"	m	class:EVAL_OPTS
+__init__	.\utils_summarization.py	/^    def __init__(self, tokenizer, prefix="train", data_dir=""):$/;"	m	class:CNNDailyMailDataset
+__iter__	.\distillation\grouped_batch_sampler.py	/^    def __iter__(self):$/;"	m	class:GroupedBatchSampler	file:
+__len__	.\distillation\grouped_batch_sampler.py	/^    def __len__(self):$/;"	m	class:GroupedBatchSampler	file:
+__len__	.\distillation\lm_seqs_dataset.py	/^    def __len__(self):$/;"	m	class:LmSeqsDataset	file:
+__len__	.\run_lm_finetuning.py	/^    def __len__(self):$/;"	m	class:TextDataset	file:
+__len__	.\utils_summarization.py	/^    def __len__(self):$/;"	m	class:CNNDailyMailDataset	file:
+__repr__	.\contrib\run_swag.py	/^    def __repr__(self):$/;"	m	class:SwagExample	file:
+__repr__	.\utils_squad.py	/^    def __repr__(self):$/;"	m	class:SquadExample	file:
+__str__	.\contrib\run_swag.py	/^    def __str__(self):$/;"	m	class:SwagExample	file:
+__str__	.\utils_squad.py	/^    def __str__(self):$/;"	m	class:SquadExample	file:
+_add_missing_period	.\utils_summarization.py	/^def _add_missing_period(line):$/;"	f
+_check_is_max_context	.\utils_squad.py	/^def _check_is_max_context(doc_spans, cur_span_index, position):$/;"	f
+_compute_pytorch	.\benchmarks.py	/^def _compute_pytorch(model_names, dictionary, average_over, device, torchscript, fp16):$/;"	f
+_compute_softmax	.\utils_squad.py	/^def _compute_softmax(scores):$/;"	f
+_compute_tensorflow	.\benchmarks.py	/^def _compute_tensorflow(model_names, dictionary, average_over, amp):$/;"	f
+_create_examples	.\utils_multiple_choice.py	/^    def _create_examples(self, lines, set_type):$/;"	m	class:RaceProcessor
+_create_examples	.\utils_multiple_choice.py	/^    def _create_examples(self, lines, type):$/;"	m	class:ArcProcessor
+_create_examples	.\utils_multiple_choice.py	/^    def _create_examples(self, lines: List[List[str]], type: str):$/;"	m	class:SwagProcessor
+_get_best_indexes	.\utils_squad.py	/^def _get_best_indexes(logits, n_best_size):$/;"	f
+_improve_answer_span	.\utils_squad.py	/^def _improve_answer_span(doc_tokens, input_start, input_end, tokenizer,$/;"	f
+_quantize	.\distillation\grouped_batch_sampler.py	/^def _quantize(x, bins):$/;"	f
+_read_csv	.\utils_multiple_choice.py	/^    def _read_csv(self, input_file):$/;"	m	class:SwagProcessor
+_read_json	.\utils_multiple_choice.py	/^    def _read_json(self, input_file):$/;"	m	class:ArcProcessor
+_read_txt	.\utils_multiple_choice.py	/^    def _read_txt(self, input_dir):$/;"	m	class:RaceProcessor
+_rotate_checkpoints	.\run_lm_finetuning.py	/^def _rotate_checkpoints(args, checkpoint_prefix, use_mtime=False):$/;"	f
+_strip_spaces	.\utils_squad.py	/^    def _strip_spaces(text):$/;"	f	function:get_final_text
+_truncate_seq_pair	.\contrib\run_swag.py	/^def _truncate_seq_pair(tokens_a, tokens_b, max_length):$/;"	f
+_update_rate	.\run_summarization_finetuning.py	/^    def _update_rate(self, stack):$/;"	m	class:BertSumOptimizer
+absolute_import	.\contrib\run_swag.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+absolute_import	.\contrib\run_transfo_xl.py	/^from __future__ import absolute_import, division, print_function, unicode_literals$/;"	i
+absolute_import	.\distillation\run_squad_w_distillation.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+absolute_import	.\run_generation.py	/^from __future__ import absolute_import, division, print_function, unicode_literals$/;"	i
+absolute_import	.\run_glue.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+absolute_import	.\run_lm_finetuning.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+absolute_import	.\run_multiple_choice.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+absolute_import	.\run_ner.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+absolute_import	.\run_squad.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+absolute_import	.\test_examples.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	.\utils_multiple_choice.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+absolute_import	.\utils_ner.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+absolute_import	.\utils_squad.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+accuracy	.\contrib\run_openai_gpt.py	/^def accuracy(out, labels):$/;"	f
+accuracy	.\contrib\run_swag.py	/^def accuracy(out, labels):$/;"	f
+activation	.\distillation\training_configs\distilbert-base-uncased.json	/^	"activation": "gelu",$/;"	f
+add_special_tokens	.\utils_multiple_choice.py	/^                add_special_tokens=True,$/;"	v
+amp	.\contrib\run_swag.py	/^            from apex import amp$/;"	i
+amp	.\distillation\distiller.py	/^                from apex import amp$/;"	i
+amp	.\distillation\distiller.py	/^            from apex import amp$/;"	i
+amp	.\distillation\run_squad_w_distillation.py	/^            from apex import amp$/;"	i
+amp	.\run_glue.py	/^            from apex import amp$/;"	i
+amp	.\run_lm_finetuning.py	/^            from apex import amp$/;"	i
+amp	.\run_multiple_choice.py	/^            from apex import amp$/;"	i
+amp	.\run_ner.py	/^            from apex import amp$/;"	i
+amp	.\run_squad.py	/^            from apex import amp$/;"	i
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 0$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 1022$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 1295$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 159$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 176$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 256$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 305$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 308$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 436$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 46$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 472$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 502$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 671$/;"	f
+answer_start	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "answer_start": 94$/;"	f
+answers	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "answers": [],$/;"	f
+answers	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "answers": [{$/;"	f
+apex	.\run_squad.py	/^            import apex$/;"	i
+apply_no_ans_threshold	.\utils_squad_evaluate.py	/^def apply_no_ans_threshold(scores, na_probs, qid_to_has_ans, na_prob_thresh):$/;"	f
+argparse	.\ARC-V1-Feb2018-2\index.py	/^import argparse, elasticsearch, json$/;"	i
+argparse	.\benchmarks.py	/^import argparse$/;"	i
+argparse	.\contrib\run_openai_gpt.py	/^import argparse$/;"	i
+argparse	.\contrib\run_swag.py	/^import argparse$/;"	i
+argparse	.\contrib\run_transfo_xl.py	/^import argparse$/;"	i
+argparse	.\distillation\run_squad_w_distillation.py	/^import argparse$/;"	i
+argparse	.\distillation\scripts\binarized_data.py	/^import argparse$/;"	i
+argparse	.\distillation\scripts\extract.py	/^import argparse$/;"	i
+argparse	.\distillation\scripts\extract_distilbert.py	/^import argparse$/;"	i
+argparse	.\distillation\scripts\token_counts.py	/^import argparse$/;"	i
+argparse	.\distillation\train.py	/^import argparse$/;"	i
+argparse	.\run_bertology.py	/^import argparse$/;"	i
+argparse	.\run_generation.py	/^import argparse$/;"	i
+argparse	.\run_glue.py	/^import argparse$/;"	i
+argparse	.\run_lm_finetuning.py	/^import argparse$/;"	i
+argparse	.\run_multiple_choice.py	/^import argparse$/;"	i
+argparse	.\run_ner.py	/^import argparse$/;"	i
+argparse	.\run_squad.py	/^import argparse$/;"	i
+argparse	.\run_summarization_finetuning.py	/^import argparse$/;"	i
+argparse	.\test_examples.py	/^import argparse$/;"	i
+argparse	.\utils_squad_evaluate.py	/^import argparse$/;"	i
+args	.\ARC-V1-Feb2018-2\index.py	/^    args = parser.parse_args()$/;"	v
+args	.\distillation\scripts\extract.py	/^    args = parser.parse_args()$/;"	v
+args	.\distillation\scripts\extract_distilbert.py	/^    args = parser.parse_args()$/;"	v
+args	.\distillation\scripts\token_counts.py	/^    args = parser.parse_args()$/;"	v
+attention_dropout	.\distillation\training_configs\distilbert-base-uncased.json	/^	"attention_dropout": 0.1,$/;"	f
+attention_mask	.\utils_multiple_choice.py	/^                attention_mask = ([0 if mask_padding_with_zero else 1] * padding_length) + attention_mask$/;"	v
+attention_mask	.\utils_multiple_choice.py	/^                attention_mask = attention_mask + ([0 if mask_padding_with_zero else 1] * padding_length)$/;"	v
+attention_mask	.\utils_multiple_choice.py	/^            attention_mask = [1 if mask_padding_with_zero else 0] * len(input_ids)$/;"	v
+batch_sequences	.\distillation\lm_seqs_dataset.py	/^    def batch_sequences(self,$/;"	m	class:LmSeqsDataset
+bisect	.\distillation\grouped_batch_sampler.py	/^import bisect$/;"	i
+body	.\ARC-V1-Feb2018-2\index.py	/^                           body={"query": {"match": {"text": query.strip()}}})$/;"	v
+build_lm_labels	.\utils_summarization.py	/^def build_lm_labels(sequence, pad_token):$/;"	f
+build_mask	.\utils_summarization.py	/^def build_mask(sequence, pad_token):$/;"	f
+bulk	.\ARC-V1-Feb2018-2\index.py	/^from elasticsearch.helpers import bulk$/;"	i
+check	.\distillation\lm_seqs_dataset.py	/^    def check(self):$/;"	m	class:LmSeqsDataset
+choices_features	.\utils_multiple_choice.py	/^                choices_features=choices_features,$/;"	v
+choices_features	.\utils_multiple_choice.py	/^        choices_features = []$/;"	v
+collate	.\run_summarization_finetuning.py	/^def collate(data, tokenizer, block_size):$/;"	f
+collections	.\utils_squad.py	/^import collections$/;"	i
+collections	.\utils_squad_evaluate.py	/^import collections$/;"	i
+compressed_sd	.\distillation\scripts\extract.py	/^    compressed_sd = {}$/;"	v
+compressed_sd	.\distillation\scripts\extract_distilbert.py	/^    compressed_sd = {}$/;"	v
+compute_exact	.\utils_squad_evaluate.py	/^def compute_exact(a_gold, a_pred):$/;"	f
+compute_f1	.\utils_squad_evaluate.py	/^def compute_f1(a_gold, a_pred):$/;"	f
+compute_heads_importance	.\run_bertology.py	/^def compute_heads_importance(args, model, eval_dataloader, compute_entropy=True, compute_importance=True, head_mask=None):$/;"	f
+compute_metrics	.\run_bertology.py	/^from transformers import glue_compute_metrics as compute_metrics$/;"	i
+compute_metrics	.\run_glue.py	/^from transformers import glue_compute_metrics as compute_metrics$/;"	i
+compute_token_type_ids	.\utils_summarization.py	/^def compute_token_type_ids(batch, separator_token_id):$/;"	f
+config	.\run_tf_glue.py	/^config = BertConfig.from_pretrained("bert-base-cased", num_labels=num_labels)$/;"	v
+context	.\tests_samples\SQUAD\dev-v2.0-small.json	/^            "context": "A problem is regarded as inherently difficult if its solution requires significant resources, whatever the algorithm used. The theory formalizes this intuition, by introducing mathematical models of computation to study these problems and quantifying the amount of resources needed to solve them, such as time and storage. Other complexity measures are also used, such as the amount of communication (used in communication complexity), the number of gates in a circuit (used in circuit complexity) and the number of processors (used in parallel computing). One of the roles of computational complexity theory is to determine the practical limits on what computers can and cannot do."$/;"	f
+context	.\tests_samples\SQUAD\dev-v2.0-small.json	/^            "context": "Computational complexity theory is a branch of the theory of computation in theoretical computer science that focuses on classifying computational problems according to their inherent difficulty, and relating those classes to each other. A computational problem is understood to be a task that is in principle amenable to being solved by a computer, which is equivalent to stating that the problem may be solved by mechanical application of mathematical steps, such as an algorithm."$/;"	f
+context	.\tests_samples\SQUAD\dev-v2.0-small.json	/^            "context": "The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They adopted the Gallo-Romance language of the Frankish land they settled, their dialect becoming known as Norman, Normaund or Norman French, an important literary language. The Duchy of Normandy, which they formed by treaty with the French crown, was a great fief of medieval France, and under Richard I of Normandy was forged into a cohesive and formidable principality in feudal tenure. The Normans are noted both for their culture, such as their unique Romanesque architecture and musical traditions, and for their significant military accomplishments and innovations. Norman adventurers founded the Kingdom of Sicily under Roger II after conquering southern Italy on the Saracens and Byzantines, and an expedition on behalf of their duke, William the Conqueror, led to the Norman conquest of England at the Battle of Hastings in 1066. Norman cultural and military influence spread from these new European centres to the Crusader states of the Near East, where their prince Bohemond I founded the Principality of Antioch in the Levant, to Scotland and Wales in Great Britain, to Ireland, and to the coasts of north Africa and the Canary Islands."$/;"	f
+context	.\tests_samples\SQUAD\dev-v2.0-small.json	/^            "context": "The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (\\"Norman\\" comes from \\"Norseman\\") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries."$/;"	f
+convert_examples_to_features	.\contrib\run_swag.py	/^def convert_examples_to_features(examples, tokenizer, max_seq_length,$/;"	f
+convert_examples_to_features	.\distillation\run_squad_w_distillation.py	/^from ..utils_squad import (read_squad_examples, convert_examples_to_features,$/;"	i
+convert_examples_to_features	.\run_glue.py	/^from transformers import glue_convert_examples_to_features as convert_examples_to_features$/;"	i
+convert_examples_to_features	.\run_multiple_choice.py	/^from utils_multiple_choice import (convert_examples_to_features, processors)$/;"	i
+convert_examples_to_features	.\run_ner.py	/^from utils_ner import convert_examples_to_features, get_labels, read_examples_from_file$/;"	i
+convert_examples_to_features	.\run_squad.py	/^from utils_squad import (read_squad_examples, convert_examples_to_features,$/;"	i
+convert_examples_to_features	.\utils_multiple_choice.py	/^def convert_examples_to_features($/;"	f
+convert_examples_to_features	.\utils_ner.py	/^def convert_examples_to_features(examples,$/;"	f
+convert_examples_to_features	.\utils_squad.py	/^def convert_examples_to_features(examples, tokenizer, max_seq_length,$/;"	f
+copy	.\distillation\grouped_batch_sampler.py	/^import copy$/;"	i
+core	.\run_glue.py	/^        import torch_xla.core.xla_model as xm$/;"	i
+counter	.\distillation\scripts\token_counts.py	/^    counter = Counter()$/;"	v
+counts	.\distillation\scripts\token_counts.py	/^    counts = [0]*args.vocab_size$/;"	v
+create_lengths_groups	.\distillation\distiller.py	/^from grouped_batch_sampler import GroupedBatchSampler, create_lengths_groups$/;"	i
+create_lengths_groups	.\distillation\grouped_batch_sampler.py	/^def create_lengths_groups(lengths, k=0):$/;"	f
+create_setup_and_compute	.\benchmarks.py	/^def create_setup_and_compute(model_names: List[str],$/;"	f
+csv	.\benchmarks.py	/^import csv$/;"	i
+csv	.\contrib\run_openai_gpt.py	/^import csv$/;"	i
+csv	.\contrib\run_swag.py	/^import csv$/;"	i
+csv	.\utils_multiple_choice.py	/^import csv$/;"	i
+data	.\distillation\scripts\token_counts.py	/^        data = pickle.load(fp)$/;"	v
+data	.\tests_samples\SQUAD\dev-v2.0-small.json	/^    "data": [{$/;"	f
+datefmt	.\contrib\run_openai_gpt.py	/^                    datefmt = '%m\/%d\/%Y %H:%M:%S',$/;"	v
+datefmt	.\contrib\run_transfo_xl.py	/^                    datefmt = '%m\/%d\/%Y %H:%M:%S',$/;"	v
+datefmt	.\distillation\scripts\binarized_data.py	/^                    datefmt = '%m\/%d\/%Y %H:%M:%S',$/;"	v
+datefmt	.\distillation\scripts\token_counts.py	/^                    datefmt = '%m\/%d\/%Y %H:%M:%S',$/;"	v
+datefmt	.\distillation\utils.py	/^                    datefmt = '%m\/%d\/%Y %H:%M:%S',$/;"	v
+datefmt	.\run_generation.py	/^                    datefmt = '%m\/%d\/%Y %H:%M:%S',$/;"	v
+datetime	.\gpu_mem_track.py	/^import datetime$/;"	i
+datetime	.\run_bertology.py	/^from datetime import timedelta, datetime$/;"	i
+defaultdict	.\distillation\grouped_batch_sampler.py	/^from collections import defaultdict$/;"	i
+deque	.\utils_summarization.py	/^from collections import deque$/;"	i
+description	.\ARC-V1-Feb2018-2\index.py	/^        description='Add lines from a file to a simple text Elasticsearch index.')$/;"	v
+dim	.\distillation\training_configs\distilbert-base-uncased.json	/^	"dim": 768,$/;"	f
+divide_chunks	.\distillation\lm_seqs_dataset.py	/^        def divide_chunks(l, n):$/;"	f	function:LmSeqsDataset.remove_long_sequences
+division	.\contrib\run_swag.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+division	.\contrib\run_transfo_xl.py	/^from __future__ import absolute_import, division, print_function, unicode_literals$/;"	i
+division	.\distillation\run_squad_w_distillation.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+division	.\run_generation.py	/^from __future__ import absolute_import, division, print_function, unicode_literals$/;"	i
+division	.\run_glue.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+division	.\run_lm_finetuning.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+division	.\run_multiple_choice.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+division	.\run_ner.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+division	.\run_squad.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+division	.\test_examples.py	/^from __future__ import division$/;"	i
+division	.\utils_multiple_choice.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+division	.\utils_ner.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+division	.\utils_squad.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+doc_count	.\ARC-V1-Feb2018-2\index.py	/^            doc_count = res[0]$/;"	v
+dropout	.\distillation\training_configs\distilbert-base-uncased.json	/^	"dropout": 0.1,$/;"	f
+elasticsearch	.\ARC-V1-Feb2018-2\index.py	/^import argparse, elasticsearch, json$/;"	i
+encode_for_summarization	.\utils_summarization.py	/^def encode_for_summarization(story_lines, summary_lines, tokenizer):$/;"	f
+end_epoch	.\distillation\distiller.py	/^    def end_epoch(self):$/;"	m	class:Distiller
+entropy	.\run_bertology.py	/^def entropy(p):$/;"	f
+es	.\ARC-V1-Feb2018-2\index.py	/^    es = Elasticsearch('127.0.0.1:9200')$/;"	v
+evaluate	.\contrib\run_swag.py	/^def evaluate(args, model, tokenizer, prefix=""):$/;"	f
+evaluate	.\contrib\run_transfo_xl.py	/^    def evaluate(eval_iter):$/;"	f	function:main
+evaluate	.\distillation\run_squad_w_distillation.py	/^def evaluate(args, model, tokenizer, prefix=""):$/;"	f
+evaluate	.\run_glue.py	/^def evaluate(args, model, tokenizer, prefix=""):$/;"	f
+evaluate	.\run_lm_finetuning.py	/^def evaluate(args, model, tokenizer, prefix=""):$/;"	f
+evaluate	.\run_multiple_choice.py	/^def evaluate(args, model, tokenizer, prefix="", test=False):$/;"	f
+evaluate	.\run_ner.py	/^def evaluate(args, model, tokenizer, labels, pad_token_label_id, mode, prefix=""):$/;"	f
+evaluate	.\run_squad.py	/^def evaluate(args, model, tokenizer, prefix=""):$/;"	f
+evaluate	.\run_summarization_finetuning.py	/^def evaluate(args, model, tokenizer, prefix=""):$/;"	f
+evaluate_on_squad	.\distillation\run_squad_w_distillation.py	/^from ..utils_squad_evaluate import EVAL_OPTS, main as evaluate_on_squad$/;"	i
+evaluate_on_squad	.\run_squad.py	/^from utils_squad_evaluate import EVAL_OPTS, main as evaluate_on_squad$/;"	i
+example_id	.\utils_multiple_choice.py	/^                example_id=example.example_id,$/;"	v
+f1_score	.\run_ner.py	/^from seqeval.metrics import precision_score, recall_score, f1_score$/;"	i
+features	.\utils_multiple_choice.py	/^    features = []$/;"	v
+find_all_best_thresh	.\utils_squad_evaluate.py	/^def find_all_best_thresh(main_eval, preds, exact_raw, f1_raw, na_probs, qid_to_has_ans):$/;"	f
+find_all_best_thresh_v2	.\utils_squad.py	/^from utils_squad_evaluate import find_all_best_thresh_v2, make_qid_to_has_ans, get_raw_scores$/;"	i
+find_all_best_thresh_v2	.\utils_squad_evaluate.py	/^def find_all_best_thresh_v2(main_eval, preds, exact_raw, f1_raw, na_probs, qid_to_has_ans):$/;"	f
+find_best_thresh	.\utils_squad_evaluate.py	/^def find_best_thresh(preds, scores, na_probs, qid_to_has_ans):$/;"	f
+find_best_thresh_v2	.\utils_squad_evaluate.py	/^def find_best_thresh_v2(preds, scores, na_probs, qid_to_has_ans):$/;"	f
+fit_to_block_size	.\utils_summarization.py	/^def fit_to_block_size(sequence, block_size, pad_token):$/;"	f
+format_log	.\contrib\run_transfo_xl.py	/^    def format_log(loss, split):$/;"	f	function:main
+freeze_pos_embeddings	.\distillation\train.py	/^def freeze_pos_embeddings(student, args):$/;"	f
+freeze_token_type_embeddings	.\distillation\train.py	/^def freeze_token_type_embeddings(student, args):$/;"	f
+functools	.\run_summarization_finetuning.py	/^import functools$/;"	i
+gc	.\gpu_mem_track.py	/^import gc$/;"	i
+get_dev_examples	.\utils_multiple_choice.py	/^    def get_dev_examples(self, data_dir):$/;"	m	class:ArcProcessor
+get_dev_examples	.\utils_multiple_choice.py	/^    def get_dev_examples(self, data_dir):$/;"	m	class:DataProcessor
+get_dev_examples	.\utils_multiple_choice.py	/^    def get_dev_examples(self, data_dir):$/;"	m	class:RaceProcessor
+get_dev_examples	.\utils_multiple_choice.py	/^    def get_dev_examples(self, data_dir):$/;"	m	class:SwagProcessor
+get_final_text	.\utils_squad.py	/^def get_final_text(pred_text, orig_text, do_lower_case, verbose_logging=False):$/;"	f
+get_labels	.\run_ner.py	/^from utils_ner import convert_examples_to_features, get_labels, read_examples_from_file$/;"	i
+get_labels	.\utils_multiple_choice.py	/^    def get_labels(self):$/;"	m	class:ArcProcessor
+get_labels	.\utils_multiple_choice.py	/^    def get_labels(self):$/;"	m	class:DataProcessor
+get_labels	.\utils_multiple_choice.py	/^    def get_labels(self):$/;"	m	class:RaceProcessor
+get_labels	.\utils_multiple_choice.py	/^    def get_labels(self):$/;"	m	class:SwagProcessor
+get_labels	.\utils_ner.py	/^def get_labels(path):$/;"	f
+get_raw_scores	.\utils_squad.py	/^from utils_squad_evaluate import find_all_best_thresh_v2, make_qid_to_has_ans, get_raw_scores$/;"	i
+get_raw_scores	.\utils_squad_evaluate.py	/^def get_raw_scores(dataset, preds):$/;"	f
+get_setup_file	.\test_examples.py	/^def get_setup_file():$/;"	f
+get_tensors	.\gpu_mem_track.py	/^    def get_tensors(self):$/;"	m	class:MemTracker
+get_test_examples	.\utils_multiple_choice.py	/^    def get_test_examples(self, data_dir):$/;"	m	class:ArcProcessor
+get_test_examples	.\utils_multiple_choice.py	/^    def get_test_examples(self, data_dir):$/;"	m	class:DataProcessor
+get_test_examples	.\utils_multiple_choice.py	/^    def get_test_examples(self, data_dir):$/;"	m	class:RaceProcessor
+get_test_examples	.\utils_multiple_choice.py	/^    def get_test_examples(self, data_dir):$/;"	m	class:SwagProcessor
+get_tokens	.\utils_squad_evaluate.py	/^def get_tokens(s):$/;"	f
+get_train_examples	.\utils_multiple_choice.py	/^    def get_train_examples(self, data_dir):$/;"	m	class:ArcProcessor
+get_train_examples	.\utils_multiple_choice.py	/^    def get_train_examples(self, data_dir):$/;"	m	class:DataProcessor
+get_train_examples	.\utils_multiple_choice.py	/^    def get_train_examples(self, data_dir):$/;"	m	class:RaceProcessor
+get_train_examples	.\utils_multiple_choice.py	/^    def get_train_examples(self, data_dir):$/;"	m	class:SwagProcessor
+git	.\distillation\utils.py	/^import git$/;"	i
+git_log	.\distillation\train.py	/^from utils import git_log, logger, init_gpu_params, set_seed$/;"	i
+git_log	.\distillation\utils.py	/^def git_log(folder_path: str):$/;"	f
+glob	.\contrib\run_swag.py	/^import glob$/;"	i
+glob	.\distillation\run_squad_w_distillation.py	/^import glob$/;"	i
+glob	.\run_glue.py	/^import glob$/;"	i
+glob	.\run_lm_finetuning.py	/^import glob$/;"	i
+glob	.\run_multiple_choice.py	/^import glob$/;"	i
+glob	.\run_ner.py	/^import glob$/;"	i
+glob	.\run_squad.py	/^import glob$/;"	i
+glob	.\utils_multiple_choice.py	/^import glob$/;"	i
+glue_convert_examples_to_features	.\run_tf_glue.py	/^from transformers import BertTokenizer, TFBertForSequenceClassification, BertConfig, glue_convert_examples_to_features, BertForSequenceClassification, glue_processors$/;"	i
+glue_processors	.\run_tf_glue.py	/^from transformers import BertTokenizer, TFBertForSequenceClassification, BertConfig, glue_convert_examples_to_features, BertForSequenceClassification, glue_processors$/;"	i
+help	.\distillation\scripts\token_counts.py	/^                        help="The binarized dataset.")$/;"	v
+help	.\distillation\scripts\token_counts.py	/^                        help="The dump file.")$/;"	v
+hidden_dim	.\distillation\training_configs\distilbert-base-uncased.json	/^	"hidden_dim": 3072,$/;"	f
+histogram_na_prob	.\utils_squad_evaluate.py	/^def histogram_na_prob(na_probs, qid_list, image_dir, name):$/;"	f
+history	.\run_tf_glue.py	/^history = model.fit(train_dataset, epochs=EPOCHS, steps_per_epoch=train_steps,$/;"	v
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "56ddde6b9a695914005b9628",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "56ddde6b9a695914005b9629",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "56ddde6b9a695914005b962a",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "56dddf4066d3e219004dad5f",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "56e16182e3433e1400422e28",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "56e16839cd28a01900c67887",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "56e16839cd28a01900c67888",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "56e16839cd28a01900c67889",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "5ad39d53604f3c001a3fe8d3",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "5ad39d53604f3c001a3fe8d4",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "5ad3a266604f3c001a3fea2b",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "5ad5316b5b96ef001a10ab76",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "5ad532575b96ef001a10ab7f",$/;"	f
+id	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "id": "5ad532575b96ef001a10ab80",$/;"	f
+index_name	.\ARC-V1-Feb2018-2\index.py	/^    index_name = args.index$/;"	v
+inference	.\benchmarks.py	/^        def inference(inputs):$/;"	f	function:_compute_tensorflow
+init_gpu_params	.\distillation\train.py	/^from utils import git_log, logger, init_gpu_params, set_seed$/;"	i
+init_gpu_params	.\distillation\utils.py	/^def init_gpu_params(params):$/;"	f
+initializer_range	.\distillation\training_configs\distilbert-base-uncased.json	/^	"initializer_range": 0.02,$/;"	f
+initializer_range	.\distillation\training_configs\distilgpt2.json	/^	"initializer_range": 0.02,$/;"	f
+input_ids	.\utils_multiple_choice.py	/^                input_ids = ([pad_token] * padding_length) + input_ids$/;"	v
+input_ids	.\utils_multiple_choice.py	/^                input_ids = input_ids + ([pad_token] * padding_length)$/;"	v
+inputs	.\utils_multiple_choice.py	/^            inputs = tokenizer.encode_plus($/;"	v
+inputs_1	.\run_tf_glue.py	/^    inputs_1 = tokenizer.encode_plus(sentence_0, sentence_1, add_special_tokens=True, return_tensors='pt')$/;"	v
+inputs_2	.\run_tf_glue.py	/^    inputs_2 = tokenizer.encode_plus(sentence_0, sentence_2, add_special_tokens=True, return_tensors='pt')$/;"	v
+inspect	.\run_multiple_choice.py	/^import inspect$/;"	i
+is_impossible	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "is_impossible": false$/;"	f
+is_impossible	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "is_impossible": true$/;"	f
+is_tf_available	.\benchmarks.py	/^from transformers import is_tf_available, is_torch_available$/;"	i
+is_torch_available	.\benchmarks.py	/^from transformers import is_tf_available, is_torch_available$/;"	i
+is_whitespace	.\utils_squad.py	/^    def is_whitespace(c):$/;"	f	function:read_squad_examples
+iter	.\distillation\distiller.py	/^    def iter(self):$/;"	m	class:Distiller
+json	.\ARC-V1-Feb2018-2\index.py	/^import argparse, elasticsearch, json$/;"	i
+json	.\distillation\train.py	/^import json$/;"	i
+json	.\distillation\utils.py	/^import json$/;"	i
+json	.\utils_multiple_choice.py	/^import json$/;"	i
+json	.\utils_squad.py	/^import json$/;"	i
+json	.\utils_squad_evaluate.py	/^import json$/;"	i
+label	.\utils_multiple_choice.py	/^                label=label,$/;"	v
+label	.\utils_multiple_choice.py	/^        label = label_map[example.label]$/;"	v
+label_map	.\utils_multiple_choice.py	/^    label_map = {label : i for i, label in enumerate(label_list)}$/;"	v
+layer_norm_epsilon	.\distillation\training_configs\distilgpt2.json	/^	"layer_norm_epsilon": 0.00001,$/;"	f
+level	.\contrib\run_openai_gpt.py	/^                    level = logging.INFO)$/;"	v
+level	.\contrib\run_transfo_xl.py	/^                    level = logging.INFO)$/;"	v
+level	.\distillation\scripts\binarized_data.py	/^                    level = logging.INFO)$/;"	v
+level	.\distillation\scripts\token_counts.py	/^                    level = logging.INFO)$/;"	v
+level	.\distillation\utils.py	/^                    level = logging.INFO)$/;"	v
+level	.\run_generation.py	/^                    level = logging.INFO)$/;"	v
+load_and_cache_examples	.\contrib\run_swag.py	/^def load_and_cache_examples(args, tokenizer, evaluate=False, output_examples=False):$/;"	f
+load_and_cache_examples	.\distillation\run_squad_w_distillation.py	/^def load_and_cache_examples(args, tokenizer, evaluate=False, output_examples=False):$/;"	f
+load_and_cache_examples	.\run_bertology.py	/^from run_glue import set_seed, load_and_cache_examples, ALL_MODELS, MODEL_CLASSES$/;"	i
+load_and_cache_examples	.\run_glue.py	/^def load_and_cache_examples(args, task, tokenizer, evaluate=False):$/;"	f
+load_and_cache_examples	.\run_lm_finetuning.py	/^def load_and_cache_examples(args, tokenizer, evaluate=False):$/;"	f
+load_and_cache_examples	.\run_multiple_choice.py	/^def load_and_cache_examples(args, task, tokenizer, evaluate=False, test=False):$/;"	f
+load_and_cache_examples	.\run_ner.py	/^def load_and_cache_examples(args, tokenizer, labels, pad_token_label_id, mode):$/;"	f
+load_and_cache_examples	.\run_squad.py	/^def load_and_cache_examples(args, tokenizer, evaluate=False, output_examples=False):$/;"	f
+load_and_cache_examples	.\run_summarization_finetuning.py	/^def load_and_cache_examples(args, tokenizer):$/;"	f
+load_rocstories_dataset	.\contrib\run_openai_gpt.py	/^def load_rocstories_dataset(dataset_path):$/;"	f
+log_tensorboard	.\distillation\distiller.py	/^    def log_tensorboard(self):$/;"	m	class:Distiller
+logger	.\contrib\run_openai_gpt.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\contrib\run_swag.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\contrib\run_transfo_xl.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\distillation\distiller.py	/^from utils import logger$/;"	i
+logger	.\distillation\grouped_batch_sampler.py	/^from utils import logger$/;"	i
+logger	.\distillation\lm_seqs_dataset.py	/^from utils import logger$/;"	i
+logger	.\distillation\run_squad_w_distillation.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\distillation\scripts\binarized_data.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\distillation\scripts\token_counts.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\distillation\train.py	/^from utils import git_log, logger, init_gpu_params, set_seed$/;"	i
+logger	.\distillation\utils.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\run_bertology.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\run_generation.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\run_glue.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\run_lm_finetuning.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\run_multiple_choice.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\run_ner.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\run_squad.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\run_summarization_finetuning.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\test_examples.py	/^logger = logging.getLogger()$/;"	v
+logger	.\utils_multiple_choice.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\utils_ner.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	.\utils_squad.py	/^logger = logging.getLogger(__name__)$/;"	v
+logging	.\contrib\run_openai_gpt.py	/^import logging$/;"	i
+logging	.\contrib\run_swag.py	/^import logging$/;"	i
+logging	.\contrib\run_transfo_xl.py	/^import logging$/;"	i
+logging	.\distillation\run_squad_w_distillation.py	/^import logging$/;"	i
+logging	.\distillation\scripts\binarized_data.py	/^import logging$/;"	i
+logging	.\distillation\scripts\token_counts.py	/^import logging$/;"	i
+logging	.\distillation\utils.py	/^import logging$/;"	i
+logging	.\run_bertology.py	/^import logging$/;"	i
+logging	.\run_generation.py	/^import logging$/;"	i
+logging	.\run_glue.py	/^import logging$/;"	i
+logging	.\run_lm_finetuning.py	/^import logging$/;"	i
+logging	.\run_multiple_choice.py	/^import logging$/;"	i
+logging	.\run_ner.py	/^import logging$/;"	i
+logging	.\run_squad.py	/^import logging$/;"	i
+logging	.\run_summarization_finetuning.py	/^import logging$/;"	i
+logging	.\test_examples.py	/^import logging$/;"	i
+logging	.\utils_multiple_choice.py	/^import logging$/;"	i
+logging	.\utils_ner.py	/^import logging$/;"	i
+logging	.\utils_squad.py	/^import logging$/;"	i
+loss	.\run_tf_glue.py	/^    loss = tf.keras.losses.MeanSquaredError()$/;"	v
+loss	.\run_tf_glue.py	/^    loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)$/;"	v
+lower	.\utils_squad_evaluate.py	/^  def lower(text):$/;"	f	function:normalize_answer
+main	.\benchmarks.py	/^def main():$/;"	f
+main	.\contrib\run_openai_gpt.py	/^def main():$/;"	f
+main	.\contrib\run_swag.py	/^def main():$/;"	f
+main	.\contrib\run_transfo_xl.py	/^def main():$/;"	f
+main	.\distillation\run_squad_w_distillation.py	/^def main():$/;"	f
+main	.\distillation\scripts\binarized_data.py	/^def main():$/;"	f
+main	.\distillation\train.py	/^def main():$/;"	f
+main	.\run_bertology.py	/^def main():$/;"	f
+main	.\run_generation.py	/^def main():$/;"	f
+main	.\run_glue.py	/^def main():$/;"	f
+main	.\run_lm_finetuning.py	/^def main():$/;"	f
+main	.\run_multiple_choice.py	/^def main():$/;"	f
+main	.\run_ner.py	/^def main():$/;"	f
+main	.\run_squad.py	/^def main():$/;"	f
+main	.\run_summarization_finetuning.py	/^def main():$/;"	f
+main	.\utils_squad_evaluate.py	/^def main(OPTS):$/;"	f
+make_documents	.\ARC-V1-Feb2018-2\index.py	/^    def make_documents(f):$/;"	f
+make_eval_dict	.\utils_squad_evaluate.py	/^def make_eval_dict(exact_scores, f1_scores, qid_list=None):$/;"	f
+make_precision_recall_eval	.\utils_squad_evaluate.py	/^def make_precision_recall_eval(scores, na_probs, num_true_pos, qid_to_has_ans,$/;"	f
+make_qid_to_has_ans	.\utils_squad.py	/^from utils_squad_evaluate import find_all_best_thresh_v2, make_qid_to_has_ans, get_raw_scores$/;"	i
+make_qid_to_has_ans	.\utils_squad_evaluate.py	/^def make_qid_to_has_ans(dataset):$/;"	f
+mask_heads	.\run_bertology.py	/^def mask_heads(args, model, eval_dataloader):$/;"	f
+mask_tokens	.\run_lm_finetuning.py	/^def mask_tokens(inputs, tokenizer, args):$/;"	f
+math	.\contrib\run_transfo_xl.py	/^import math$/;"	i
+math	.\distillation\distiller.py	/^import math$/;"	i
+math	.\utils_squad.py	/^import math$/;"	i
+matplotlib	.\utils_squad_evaluate.py	/^    import matplotlib$/;"	i
+matplotlib	.\utils_squad_evaluate.py	/^    import matplotlib.pyplot as plt $/;"	i
+max_length	.\utils_multiple_choice.py	/^                max_length=max_length,$/;"	v
+max_position_embeddings	.\distillation\training_configs\distilbert-base-uncased.json	/^	"max_position_embeddings": 512,$/;"	f
+merge_eval	.\utils_squad_evaluate.py	/^def merge_eval(main_eval, new_eval, prefix):$/;"	f
+metric	.\run_tf_glue.py	/^metric = tf.keras.metrics.SparseCategoricalAccuracy('accuracy')$/;"	v
+model	.\distillation\scripts\extract.py	/^        model = GPT2LMHeadModel.from_pretrained(args.model_name)$/;"	v
+model	.\distillation\scripts\extract.py	/^        model = RobertaForMaskedLM.from_pretrained(args.model_name)$/;"	v
+model	.\distillation\scripts\extract_distilbert.py	/^        model = BertForMaskedLM.from_pretrained(args.model_name)$/;"	v
+model	.\run_tf_glue.py	/^model = TFBertForSequenceClassification.from_pretrained('bert-base-cased', config=config)$/;"	v
+modelsize	.\modelsize_estimate.py	/^def modelsize(model, input, type_size=4):$/;"	f
+n_ctx	.\distillation\training_configs\distilgpt2.json	/^	"n_ctx": 1024,$/;"	f
+n_embd	.\distillation\training_configs\distilgpt2.json	/^	"n_embd": 768,$/;"	f
+n_head	.\distillation\training_configs\distilgpt2.json	/^	"n_head": 12,$/;"	f
+n_heads	.\distillation\training_configs\distilbert-base-uncased.json	/^	"n_heads": 12,$/;"	f
+n_layer	.\distillation\training_configs\distilgpt2.json	/^	"n_layer": 6,$/;"	f
+n_layers	.\distillation\training_configs\distilbert-base-uncased.json	/^	"n_layers": 6,$/;"	f
+n_positions	.\distillation\training_configs\distilgpt2.json	/^	"n_positions": 1024,$/;"	f
+nn	.\distillation\distiller.py	/^import torch.nn as nn$/;"	i
+nn	.\distillation\distiller.py	/^import torch.nn.functional as F$/;"	i
+nn	.\distillation\run_squad_w_distillation.py	/^import torch.nn as nn$/;"	i
+nn	.\distillation\run_squad_w_distillation.py	/^import torch.nn.functional as F$/;"	i
+nn	.\modelsize_estimate.py	/^import torch.nn as nn$/;"	i
+nn	.\run_generation.py	/^import torch.nn.functional as F$/;"	i
+normalize	.\utils_multiple_choice.py	/^        def normalize(truth):$/;"	f	function:ArcProcessor._create_examples
+normalize_answer	.\utils_squad_evaluate.py	/^def normalize_answer(s):$/;"	f
+np	.\contrib\run_openai_gpt.py	/^import numpy as np$/;"	i
+np	.\contrib\run_swag.py	/^import numpy as np$/;"	i
+np	.\distillation\distiller.py	/^import numpy as np$/;"	i
+np	.\distillation\grouped_batch_sampler.py	/^import numpy as np$/;"	i
+np	.\distillation\lm_seqs_dataset.py	/^import numpy as np$/;"	i
+np	.\distillation\run_squad_w_distillation.py	/^import numpy as np$/;"	i
+np	.\distillation\scripts\binarized_data.py	/^import numpy as np$/;"	i
+np	.\distillation\train.py	/^import numpy as np$/;"	i
+np	.\distillation\utils.py	/^import numpy as np$/;"	i
+np	.\gpu_mem_track.py	/^import numpy as np$/;"	i
+np	.\modelsize_estimate.py	/^import numpy as np$/;"	i
+np	.\run_bertology.py	/^import numpy as np$/;"	i
+np	.\run_generation.py	/^import numpy as np$/;"	i
+np	.\run_glue.py	/^import numpy as np$/;"	i
+np	.\run_lm_finetuning.py	/^import numpy as np$/;"	i
+np	.\run_multiple_choice.py	/^import numpy as np$/;"	i
+np	.\run_ner.py	/^import numpy as np$/;"	i
+np	.\run_squad.py	/^import numpy as np$/;"	i
+np	.\run_summarization_finetuning.py	/^import numpy as np$/;"	i
+np	.\utils_squad_evaluate.py	/^import numpy as np$/;"	i
+np	.\utils_summarization_test.py	/^import numpy as np$/;"	i
+num_labels	.\run_tf_glue.py	/^num_labels = len(glue_processors[TASK]().get_labels())$/;"	v
+open	.\utils_multiple_choice.py	/^from io import open$/;"	i
+open	.\utils_ner.py	/^from io import open$/;"	i
+open	.\utils_squad.py	/^from io import open$/;"	i
+opt	.\run_tf_glue.py	/^    opt = tf.keras.mixed_precision.experimental.LossScaleOptimizer(opt, 'dynamic')$/;"	v
+opt	.\run_tf_glue.py	/^opt = tf.keras.optimizers.Adam(learning_rate=3e-5, epsilon=1e-08)$/;"	v
+optimize	.\distillation\distiller.py	/^    def optimize(self,$/;"	m	class:Distiller
+os	.\contrib\run_openai_gpt.py	/^import os$/;"	i
+os	.\contrib\run_swag.py	/^import os$/;"	i
+os	.\distillation\distiller.py	/^import os$/;"	i
+os	.\distillation\run_squad_w_distillation.py	/^import os$/;"	i
+os	.\distillation\train.py	/^import os$/;"	i
+os	.\distillation\utils.py	/^import os$/;"	i
+os	.\run_bertology.py	/^import os$/;"	i
+os	.\run_glue.py	/^import os$/;"	i
+os	.\run_lm_finetuning.py	/^import os$/;"	i
+os	.\run_multiple_choice.py	/^import os$/;"	i
+os	.\run_ner.py	/^import os$/;"	i
+os	.\run_squad.py	/^import os$/;"	i
+os	.\run_summarization_finetuning.py	/^import os$/;"	i
+os	.\run_tf_glue.py	/^import os$/;"	i
+os	.\utils_multiple_choice.py	/^import os$/;"	i
+os	.\utils_ner.py	/^import os$/;"	i
+os	.\utils_squad_evaluate.py	/^import os$/;"	i
+os	.\utils_summarization.py	/^import os$/;"	i
+output_modes	.\run_bertology.py	/^from transformers import glue_output_modes as output_modes$/;"	i
+output_modes	.\run_glue.py	/^from transformers import glue_output_modes as output_modes$/;"	i
+padding_length	.\utils_multiple_choice.py	/^            padding_length = max_length - len(input_ids)$/;"	v
+paragraphs	.\tests_samples\SQUAD\dev-v2.0-small.json	/^        "paragraphs": [{$/;"	f
+param_name	.\distillation\scripts\extract.py	/^            param_name = f'{prefix}.embeddings.LayerNorm.{w}'$/;"	v
+param_name	.\distillation\scripts\extract.py	/^            param_name = f'{prefix}.embeddings.{w}.weight'$/;"	v
+parse_args	.\utils_squad_evaluate.py	/^def parse_args():$/;"	f
+parser	.\ARC-V1-Feb2018-2\index.py	/^    parser = argparse.ArgumentParser($/;"	v
+parser	.\distillation\scripts\extract.py	/^    parser = argparse.ArgumentParser(description="Extraction some layers of the full RobertaForMaskedLM or GPT2LMHeadModel for Transfer Learned Distillation")$/;"	v
+parser	.\distillation\scripts\extract_distilbert.py	/^    parser = argparse.ArgumentParser(description="Extraction some layers of the full BertForMaskedLM or RObertaForMaskedLM for Transfer Learned Distillation")$/;"	v
+parser	.\distillation\scripts\token_counts.py	/^    parser = argparse.ArgumentParser(description="Token Counts for smoothing the masking probabilities in MLM (cf XLM\/word2vec)")$/;"	v
+patch	.\test_examples.py	/^    from mock import patch$/;"	i
+patch	.\test_examples.py	/^    from unittest.mock import patch$/;"	i
+pickle	.\distillation\scripts\binarized_data.py	/^import pickle$/;"	i
+pickle	.\distillation\scripts\token_counts.py	/^import pickle$/;"	i
+pickle	.\distillation\train.py	/^import pickle$/;"	i
+pickle	.\run_lm_finetuning.py	/^import pickle$/;"	i
+plausible_answers	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "plausible_answers": [{$/;"	f
+plot_pr_curve	.\utils_squad_evaluate.py	/^def plot_pr_curve(precisions, recalls, out_image, title):$/;"	f
+plt	.\utils_squad_evaluate.py	/^    import matplotlib.pyplot as plt $/;"	i
+pre_process_datasets	.\contrib\run_openai_gpt.py	/^def pre_process_datasets(encoded_datasets, input_len, cap_length, start_token, delimiter_token, clf_token):$/;"	f
+precision_score	.\run_ner.py	/^from seqeval.metrics import precision_score, recall_score, f1_score$/;"	i
+pred_1	.\run_tf_glue.py	/^    pred_1 = pytorch_model(**inputs_1)[0].argmax().item()$/;"	v
+pred_2	.\run_tf_glue.py	/^    pred_2 = pytorch_model(**inputs_2)[0].argmax().item()$/;"	v
+prefix	.\distillation\scripts\extract.py	/^        prefix = 'roberta'$/;"	v
+prefix	.\distillation\scripts\extract.py	/^        prefix = 'transformer'$/;"	v
+prefix	.\distillation\scripts\extract_distilbert.py	/^        prefix = 'bert'$/;"	v
+prepare_batch_clm	.\distillation\distiller.py	/^    def prepare_batch_clm(self,$/;"	m	class:Distiller
+prepare_batch_mlm	.\distillation\distiller.py	/^    def prepare_batch_mlm(self,$/;"	m	class:Distiller
+print_2d_tensor	.\run_bertology.py	/^def print_2d_tensor(tensor):$/;"	f
+print_function	.\contrib\run_swag.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_function	.\contrib\run_transfo_xl.py	/^from __future__ import absolute_import, division, print_function, unicode_literals$/;"	i
+print_function	.\distillation\run_squad_w_distillation.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_function	.\run_generation.py	/^from __future__ import absolute_import, division, print_function, unicode_literals$/;"	i
+print_function	.\run_glue.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_function	.\run_lm_finetuning.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_function	.\run_multiple_choice.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_function	.\run_ner.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_function	.\run_squad.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_function	.\test_examples.py	/^from __future__ import print_function$/;"	i
+print_function	.\utils_multiple_choice.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_function	.\utils_ner.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_function	.\utils_squad.py	/^from __future__ import absolute_import, division, print_function$/;"	i
+print_statistics	.\distillation\lm_seqs_dataset.py	/^    def print_statistics(self):$/;"	m	class:LmSeqsDataset
+process_story	.\utils_summarization.py	/^def process_story(raw_story):$/;"	f
+processors	.\run_bertology.py	/^from transformers import glue_processors as processors$/;"	i
+processors	.\run_glue.py	/^from transformers import glue_processors as processors$/;"	i
+processors	.\run_multiple_choice.py	/^from utils_multiple_choice import (convert_examples_to_features, processors)$/;"	i
+processors	.\utils_multiple_choice.py	/^processors = {$/;"	v
+prune_heads	.\run_bertology.py	/^def prune_heads(args, model, eval_dataloader, head_mask):$/;"	f
+psutil	.\distillation\distiller.py	/^import psutil$/;"	i
+ptvsd	.\contrib\run_openai_gpt.py	/^        import ptvsd$/;"	i
+ptvsd	.\contrib\run_swag.py	/^        import ptvsd$/;"	i
+ptvsd	.\contrib\run_transfo_xl.py	/^        import ptvsd$/;"	i
+ptvsd	.\distillation\run_squad_w_distillation.py	/^        import ptvsd$/;"	i
+ptvsd	.\run_bertology.py	/^        import ptvsd$/;"	i
+ptvsd	.\run_glue.py	/^        import ptvsd$/;"	i
+ptvsd	.\run_lm_finetuning.py	/^        import ptvsd$/;"	i
+ptvsd	.\run_multiple_choice.py	/^        import ptvsd$/;"	i
+ptvsd	.\run_ner.py	/^        import ptvsd$/;"	i
+ptvsd	.\run_squad.py	/^        import ptvsd$/;"	i
+pynvml	.\gpu_mem_track.py	/^import pynvml$/;"	i
+pytorch_model	.\run_tf_glue.py	/^    pytorch_model = BertForSequenceClassification.from_pretrained('.\/save\/', from_tf=True)$/;"	v
+qas	.\tests_samples\SQUAD\dev-v2.0-small.json	/^            "qas": [{$/;"	f
+query	.\ARC-V1-Feb2018-2\index.py	/^        query = input("Enter a test search phrase: ")$/;"	v
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "From which countries did the Norse originate?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "In what country is Normandy located?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "What are two basic primary resources used to guage complexity?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "What branch of theoretical computer science deals with broadly classifying computational problems by difficulty and class of relationship?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "What is a manual application of mathematical steps?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "What measure of a computational problem broadly defines the inherent difficulty of the solution?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "What method is used to intuitively assess or quantify the amount of resources required to solve a computational problem?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "What number is used in perpendicular computing?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "What principality did William the conquerer found?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "What unit is measured to determine circuit simplicity?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "When did the Frankish identity emerge?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "When were the Normans in Normandy?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "Who did King Charles III swear fealty to?",$/;"	f
+question	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                "question": "Who was the duke in the battle of Hastings?",$/;"	f
+random	.\contrib\run_openai_gpt.py	/^import random$/;"	i
+random	.\contrib\run_swag.py	/^import random$/;"	i
+random	.\distillation\run_squad_w_distillation.py	/^import random$/;"	i
+random	.\distillation\scripts\binarized_data.py	/^import random$/;"	i
+random	.\run_glue.py	/^import random$/;"	i
+random	.\run_lm_finetuning.py	/^import random$/;"	i
+random	.\run_multiple_choice.py	/^import random$/;"	i
+random	.\run_ner.py	/^import random$/;"	i
+random	.\run_squad.py	/^import random$/;"	i
+random	.\run_summarization_finetuning.py	/^import random$/;"	i
+re	.\run_lm_finetuning.py	/^import re$/;"	i
+re	.\utils_squad_evaluate.py	/^import re$/;"	i
+read_examples_from_file	.\run_ner.py	/^from utils_ner import convert_examples_to_features, get_labels, read_examples_from_file$/;"	i
+read_examples_from_file	.\utils_ner.py	/^def read_examples_from_file(data_dir, mode):$/;"	f
+read_squad_examples	.\distillation\run_squad_w_distillation.py	/^from ..utils_squad import (read_squad_examples, convert_examples_to_features,$/;"	i
+read_squad_examples	.\run_squad.py	/^from utils_squad import (read_squad_examples, convert_examples_to_features,$/;"	i
+read_squad_examples	.\utils_squad.py	/^def read_squad_examples(input_file, is_training, version_2_with_negative):$/;"	f
+read_swag_examples	.\contrib\run_swag.py	/^def read_swag_examples(input_file, is_training=True):$/;"	f
+recall_score	.\run_ner.py	/^from seqeval.metrics import precision_score, recall_score, f1_score$/;"	i
+remove_articles	.\utils_squad_evaluate.py	/^  def remove_articles(text):$/;"	f	function:normalize_answer
+remove_empty_sequences	.\distillation\lm_seqs_dataset.py	/^    def remove_empty_sequences(self):$/;"	m	class:LmSeqsDataset
+remove_long_sequences	.\distillation\lm_seqs_dataset.py	/^    def remove_long_sequences(self):$/;"	m	class:LmSeqsDataset
+remove_punc	.\utils_squad_evaluate.py	/^  def remove_punc(text):$/;"	f	function:normalize_answer
+res	.\ARC-V1-Feb2018-2\index.py	/^            res = bulk(es, make_documents(f))$/;"	v
+res	.\ARC-V1-Feb2018-2\index.py	/^        res = es.indices.create(index=index_name, ignore=400, body=mapping)$/;"	v
+result	.\ARC-V1-Feb2018-2\index.py	/^        result = es.search(index=index_name, doc_type=TYPE,$/;"	v
+round_batch	.\distillation\distiller.py	/^    def round_batch(self,$/;"	m	class:Distiller
+run_generation	.\test_examples.py	/^import run_generation$/;"	i
+run_glue	.\test_examples.py	/^import run_glue$/;"	i
+run_precision_recall_analysis	.\utils_squad_evaluate.py	/^def run_precision_recall_analysis(main_eval, exact_raw, f1_raw, na_probs, $/;"	f
+run_squad	.\test_examples.py	/^import run_squad$/;"	i
+sample_sequence	.\run_generation.py	/^def sample_sequence(model, length, context, num_samples=1, temperature=1, top_k=0, top_p=0.0, repetition_penalty=1.0,$/;"	f
+sanity_checks	.\distillation\train.py	/^def sanity_checks(args):$/;"	f
+save_checkpoint	.\distillation\distiller.py	/^    def save_checkpoint(self,$/;"	m	class:Distiller
+select_field	.\contrib\run_swag.py	/^def select_field(features, field):$/;"	f
+select_field	.\run_multiple_choice.py	/^def select_field(features, field):$/;"	f
+sentence_0	.\run_tf_glue.py	/^    sentence_0 = 'This research was consistent with his findings.'$/;"	v
+sentence_1	.\run_tf_glue.py	/^    sentence_1 = 'His findings were compatible with this research.'$/;"	v
+sentence_2	.\run_tf_glue.py	/^    sentence_2 = 'His findings were not compatible with this research.'$/;"	v
+setUp	.\utils_summarization_test.py	/^    def setUp(self):$/;"	m	class:SummarizationDataProcessingTest
+set_seed	.\contrib\run_swag.py	/^def set_seed(args):$/;"	f
+set_seed	.\distillation\run_squad_w_distillation.py	/^def set_seed(args):$/;"	f
+set_seed	.\distillation\train.py	/^from utils import git_log, logger, init_gpu_params, set_seed$/;"	i
+set_seed	.\distillation\utils.py	/^def set_seed(args):$/;"	f
+set_seed	.\run_bertology.py	/^from run_glue import set_seed, load_and_cache_examples, ALL_MODELS, MODEL_CLASSES$/;"	i
+set_seed	.\run_generation.py	/^def set_seed(args):$/;"	f
+set_seed	.\run_glue.py	/^def set_seed(args):$/;"	f
+set_seed	.\run_lm_finetuning.py	/^def set_seed(args):$/;"	f
+set_seed	.\run_multiple_choice.py	/^def set_seed(args):$/;"	f
+set_seed	.\run_ner.py	/^def set_seed(args):$/;"	f
+set_seed	.\run_squad.py	/^def set_seed(args):$/;"	f
+set_seed	.\run_summarization_finetuning.py	/^def set_seed(args):$/;"	f
+shutil	.\distillation\train.py	/^import shutil$/;"	i
+shutil	.\run_lm_finetuning.py	/^import shutil$/;"	i
+simple_accuracy	.\run_multiple_choice.py	/^def simple_accuracy(preds, labels):$/;"	f
+sinusoidal_pos_embds	.\distillation\training_configs\distilbert-base-uncased.json	/^	"sinusoidal_pos_embds": true,$/;"	f
+socket	.\distillation\utils.py	/^import socket$/;"	i
+state_dict	.\distillation\scripts\extract.py	/^    state_dict = model.state_dict()$/;"	v
+state_dict	.\distillation\scripts\extract_distilbert.py	/^    state_dict = model.state_dict()$/;"	v
+std_idx	.\distillation\scripts\extract.py	/^    std_idx = 0$/;"	v
+std_idx	.\distillation\scripts\extract_distilbert.py	/^    std_idx = 0$/;"	v
+step	.\distillation\distiller.py	/^    def step(self,$/;"	m	class:Distiller
+step	.\run_summarization_finetuning.py	/^    def step(self):$/;"	m	class:BertSumOptimizer
+string	.\utils_squad_evaluate.py	/^import string$/;"	i
+sys	.\contrib\run_swag.py	/^import sys$/;"	i
+sys	.\run_summarization_finetuning.py	/^import sys$/;"	i
+sys	.\test_examples.py	/^import sys$/;"	i
+sys	.\utils_multiple_choice.py	/^import sys$/;"	i
+sys	.\utils_squad_evaluate.py	/^import sys$/;"	i
+tensorflow_datasets	.\run_tf_glue.py	/^import tensorflow_datasets$/;"	i
+test_build_lm_labels	.\utils_summarization_test.py	/^    def test_build_lm_labels(self):$/;"	m	class:SummarizationDataProcessingTest
+test_build_lm_labels_no_padding	.\utils_summarization_test.py	/^    def test_build_lm_labels_no_padding(self):$/;"	m	class:SummarizationDataProcessingTest
+test_build_mask	.\utils_summarization_test.py	/^    def test_build_mask(self):$/;"	m	class:SummarizationDataProcessingTest
+test_build_mask_no_padding	.\utils_summarization_test.py	/^    def test_build_mask_no_padding(self):$/;"	m	class:SummarizationDataProcessingTest
+test_build_mask_with_padding_equal_to_one	.\utils_summarization_test.py	/^    def test_build_mask_with_padding_equal_to_one(self):$/;"	m	class:SummarizationDataProcessingTest
+test_compute_token_type_ids	.\utils_summarization_test.py	/^    def test_compute_token_type_ids(self):$/;"	m	class:SummarizationDataProcessingTest
+test_fit_to_block_sequence_fit_exactly	.\utils_summarization_test.py	/^    def test_fit_to_block_sequence_fit_exactly(self):$/;"	m	class:SummarizationDataProcessingTest
+test_fit_to_block_sequence_too_big	.\utils_summarization_test.py	/^    def test_fit_to_block_sequence_too_big(self):$/;"	m	class:SummarizationDataProcessingTest
+test_fit_to_block_sequence_too_small	.\utils_summarization_test.py	/^    def test_fit_to_block_sequence_too_small(self):$/;"	m	class:SummarizationDataProcessingTest
+test_generation	.\test_examples.py	/^    def test_generation(self):$/;"	m	class:ExamplesTests
+test_process_empty_story	.\utils_summarization_test.py	/^    def test_process_empty_story(self):$/;"	m	class:SummarizationDataProcessingTest
+test_process_story_no_highlights	.\utils_summarization_test.py	/^    def test_process_story_no_highlights(self):$/;"	m	class:SummarizationDataProcessingTest
+test_process_story_with_missing_period	.\utils_summarization_test.py	/^    def test_process_story_with_missing_period(self):$/;"	m	class:SummarizationDataProcessingTest
+test_run_glue	.\test_examples.py	/^    def test_run_glue(self):$/;"	m	class:ExamplesTests
+test_run_squad	.\test_examples.py	/^    def test_run_squad(self):$/;"	m	class:ExamplesTests
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "10th and 11th centuries",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "10th century",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "Antioch",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "Computational complexity theory",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "Denmark, Iceland and Norway",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "France",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "Rollo",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "William the Conqueror",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "algorithm",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "if its solution requires significant resources",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "mathematical models of computation",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "the number of gates in a circuit",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "the number of processors",$/;"	f
+text	.\tests_samples\SQUAD\dev-v2.0-small.json	/^                    "text": "time and storage",$/;"	f
+text_a	.\utils_multiple_choice.py	/^            text_a = context$/;"	v
+text_b	.\utils_multiple_choice.py	/^                text_b = example.question + " " + ending$/;"	v
+text_b	.\utils_multiple_choice.py	/^                text_b = example.question.replace("_", ending)$/;"	v
+tf	.\benchmarks.py	/^    import tensorflow as tf$/;"	i
+tf	.\run_tf_glue.py	/^import tensorflow as tf$/;"	i
+tie_weights_	.\distillation\training_configs\distilbert-base-uncased.json	/^	"tie_weights_": true,$/;"	f
+time	.\benchmarks.py	/^from time import time$/;"	i
+time	.\contrib\run_transfo_xl.py	/^import time$/;"	i
+time	.\distillation\distiller.py	/^import time$/;"	i
+time	.\distillation\scripts\binarized_data.py	/^import time$/;"	i
+timedelta	.\run_bertology.py	/^from datetime import timedelta, datetime$/;"	i
+timeit	.\benchmarks.py	/^import timeit$/;"	i
+timeit	.\run_squad.py	/^import timeit$/;"	i
+title	.\tests_samples\SQUAD\dev-v2.0-small.json	/^        "title": "Computational_complexity_theory",$/;"	f
+title	.\tests_samples\SQUAD\dev-v2.0-small.json	/^        "title": "Normans",$/;"	f
+to_list	.\distillation\run_squad_w_distillation.py	/^def to_list(tensor):$/;"	f
+to_list	.\run_squad.py	/^def to_list(tensor):$/;"	f
+token_type_ids	.\utils_multiple_choice.py	/^                token_type_ids = ([pad_token_segment_id] * padding_length) + token_type_ids$/;"	v
+token_type_ids	.\utils_multiple_choice.py	/^                token_type_ids = token_type_ids + ([pad_token_segment_id] * padding_length)$/;"	v
+tokenize_and_encode	.\contrib\run_openai_gpt.py	/^    def tokenize_and_encode(obj):$/;"	f	function:main
+tokenizer	.\run_tf_glue.py	/^tokenizer = BertTokenizer.from_pretrained('bert-base-cased')$/;"	v
+top_k_top_p_filtering	.\run_generation.py	/^def top_k_top_p_filtering(logits, top_k=0, top_p=0.0, filter_value=-float('Inf')):$/;"	f
+torch	.\benchmarks.py	/^    import torch$/;"	i
+torch	.\contrib\run_openai_gpt.py	/^import torch$/;"	i
+torch	.\contrib\run_swag.py	/^import torch$/;"	i
+torch	.\contrib\run_transfo_xl.py	/^import torch$/;"	i
+torch	.\distillation\distiller.py	/^import torch$/;"	i
+torch	.\distillation\distiller.py	/^import torch.nn as nn$/;"	i
+torch	.\distillation\distiller.py	/^import torch.nn.functional as F$/;"	i
+torch	.\distillation\lm_seqs_dataset.py	/^import torch$/;"	i
+torch	.\distillation\run_squad_w_distillation.py	/^import torch$/;"	i
+torch	.\distillation\run_squad_w_distillation.py	/^import torch.nn as nn$/;"	i
+torch	.\distillation\run_squad_w_distillation.py	/^import torch.nn.functional as F$/;"	i
+torch	.\distillation\scripts\extract.py	/^import torch$/;"	i
+torch	.\distillation\scripts\extract_distilbert.py	/^import torch$/;"	i
+torch	.\distillation\train.py	/^import torch$/;"	i
+torch	.\distillation\utils.py	/^import torch$/;"	i
+torch	.\gpu_mem_track.py	/^import torch$/;"	i
+torch	.\modelsize_estimate.py	/^import torch$/;"	i
+torch	.\modelsize_estimate.py	/^import torch.nn as nn$/;"	i
+torch	.\run_bertology.py	/^import torch$/;"	i
+torch	.\run_generation.py	/^import torch$/;"	i
+torch	.\run_generation.py	/^import torch.nn.functional as F$/;"	i
+torch	.\run_glue.py	/^import torch$/;"	i
+torch	.\run_lm_finetuning.py	/^import torch$/;"	i
+torch	.\run_multiple_choice.py	/^import torch$/;"	i
+torch	.\run_ner.py	/^import torch$/;"	i
+torch	.\run_squad.py	/^import torch$/;"	i
+torch	.\run_summarization_finetuning.py	/^import torch$/;"	i
+torch	.\utils_summarization.py	/^import torch$/;"	i
+torch	.\utils_summarization_test.py	/^import torch$/;"	i
+torch_xla	.\run_glue.py	/^        import torch_xla$/;"	i
+torch_xla	.\run_glue.py	/^        import torch_xla.core.xla_model as xm$/;"	i
+tqdm	.\contrib\run_openai_gpt.py	/^from tqdm import tqdm, trange$/;"	i
+tqdm	.\contrib\run_swag.py	/^from tqdm import tqdm, trange$/;"	i
+tqdm	.\distillation\distiller.py	/^from tqdm import trange, tqdm$/;"	i
+tqdm	.\distillation\run_squad_w_distillation.py	/^from tqdm import tqdm, trange$/;"	i
+tqdm	.\run_bertology.py	/^from tqdm import tqdm$/;"	i
+tqdm	.\run_glue.py	/^from tqdm import tqdm, trange$/;"	i
+tqdm	.\run_lm_finetuning.py	/^from tqdm import tqdm, trange$/;"	i
+tqdm	.\run_multiple_choice.py	/^from tqdm import tqdm, trange$/;"	i
+tqdm	.\run_ner.py	/^from tqdm import tqdm, trange$/;"	i
+tqdm	.\run_squad.py	/^from tqdm import tqdm, trange$/;"	i
+tqdm	.\run_summarization_finetuning.py	/^from tqdm import tqdm, trange$/;"	i
+tqdm	.\utils_multiple_choice.py	/^import tqdm$/;"	i
+tqdm	.\utils_squad.py	/^from tqdm import tqdm$/;"	i
+track	.\gpu_mem_track.py	/^    def track(self):$/;"	m	class:MemTracker
+train	.\contrib\run_swag.py	/^def train(args, train_dataset, model, tokenizer):$/;"	f
+train	.\distillation\distiller.py	/^    def train(self):$/;"	m	class:Distiller
+train	.\distillation\run_squad_w_distillation.py	/^def train(args, train_dataset, model, tokenizer, teacher=None):$/;"	f
+train	.\run_glue.py	/^def train(args, train_dataset, model, tokenizer):$/;"	f
+train	.\run_lm_finetuning.py	/^def train(args, train_dataset, model, tokenizer):$/;"	f
+train	.\run_multiple_choice.py	/^def train(args, train_dataset, model, tokenizer):$/;"	f
+train	.\run_ner.py	/^def train(args, train_dataset, model, tokenizer, labels, pad_token_label_id):$/;"	f
+train	.\run_squad.py	/^def train(args, train_dataset, model, tokenizer):$/;"	f
+train	.\run_summarization_finetuning.py	/^def train(args, model, tokenizer):$/;"	f
+train_dataset	.\run_tf_glue.py	/^train_dataset = glue_convert_examples_to_features(data['train'], tokenizer, 128, TASK)$/;"	v
+train_dataset	.\run_tf_glue.py	/^train_dataset = train_dataset.shuffle(128).batch(BATCH_SIZE).repeat(-1)$/;"	v
+train_examples	.\run_tf_glue.py	/^train_examples = info.splits['train'].num_examples$/;"	v
+train_steps	.\run_tf_glue.py	/^train_steps = train_examples\/\/BATCH_SIZE$/;"	v
+trange	.\contrib\run_openai_gpt.py	/^from tqdm import tqdm, trange$/;"	i
+trange	.\contrib\run_swag.py	/^from tqdm import tqdm, trange$/;"	i
+trange	.\distillation\distiller.py	/^from tqdm import trange, tqdm$/;"	i
+trange	.\distillation\run_squad_w_distillation.py	/^from tqdm import tqdm, trange$/;"	i
+trange	.\run_generation.py	/^from tqdm import trange$/;"	i
+trange	.\run_glue.py	/^from tqdm import tqdm, trange$/;"	i
+trange	.\run_lm_finetuning.py	/^from tqdm import tqdm, trange$/;"	i
+trange	.\run_multiple_choice.py	/^from tqdm import tqdm, trange$/;"	i
+trange	.\run_ner.py	/^from tqdm import tqdm, trange$/;"	i
+trange	.\run_squad.py	/^from tqdm import tqdm, trange$/;"	i
+trange	.\run_summarization_finetuning.py	/^from tqdm import tqdm, trange$/;"	i
+unicode_literals	.\contrib\run_transfo_xl.py	/^from __future__ import absolute_import, division, print_function, unicode_literals$/;"	i
+unicode_literals	.\run_generation.py	/^from __future__ import absolute_import, division, print_function, unicode_literals$/;"	i
+unittest	.\test_examples.py	/^import unittest$/;"	i
+unittest	.\utils_summarization_test.py	/^import unittest$/;"	i
+valid_dataset	.\run_tf_glue.py	/^valid_dataset = glue_convert_examples_to_features(data['validation'], tokenizer, 128, TASK)$/;"	v
+valid_dataset	.\run_tf_glue.py	/^valid_dataset = valid_dataset.batch(EVAL_BATCH_SIZE)$/;"	v
+valid_examples	.\run_tf_glue.py	/^valid_examples = info.splits['validation'].num_examples$/;"	v
+valid_steps	.\run_tf_glue.py	/^valid_steps = valid_examples\/\/EVAL_BATCH_SIZE$/;"	v
+version	.\tests_samples\SQUAD\dev-v2.0-small.json	/^    "version": "v2.0",$/;"	f
+vocab_size	.\distillation\training_configs\distilbert-base-uncased.json	/^	"vocab_size": 30522$/;"	f
+vocab_size	.\distillation\training_configs\distilgpt2.json	/^	"vocab_size": 50257$/;"	f
+white_space_fix	.\utils_squad_evaluate.py	/^  def white_space_fix(text):$/;"	f	function:normalize_answer
+whitespace_tokenize	.\utils_squad.py	/^from transformers.tokenization_bert import BasicTokenizer, whitespace_tokenize$/;"	i
+write_predictions	.\utils_squad.py	/^def write_predictions(all_examples, all_features, all_results, n_best_size,$/;"	f
+write_predictions_extended	.\utils_squad.py	/^def write_predictions_extended(all_examples, all_features, all_results, n_best_size,$/;"	f
+xm	.\run_glue.py	/^        import torch_xla.core.xla_model as xm$/;"	i
+zero_grad	.\run_summarization_finetuning.py	/^    def zero_grad(self):$/;"	m	class:BertSumOptimizer
