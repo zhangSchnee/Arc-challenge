@@ -5,7 +5,7 @@ Based on the script [`run_multiple_choice.py`]().
 ### 环境说明
 
 - python 3.7(conda activate base)
-- transformers 2.2.0
+- transformers 2.1.1
 - c4130-008 上编号为2,3的两块GPU
 
 ### Fine-tuning on Arc Challenge 
@@ -57,7 +57,7 @@ gpu_tracker.track()
 gpu_tracker.track()
 ```
 
-**一般来说是batch szie太大了，这个之后需要我们进一步对输入数据做一个压缩**
+**一般来说是batch size和输入的seq length太大了，这个之后需要我们进一步对输入数据做一个压缩**
 
 ### 各个文件的作用
 
@@ -84,4 +84,4 @@ gpu_tracker.track()
 - [ ] emsemble方法的调研和初步实现
 
 ### 目前已经遇到的bug
-- transformers 2.2.0里面已经把WarmupLinearSchedule方法替换成了get_linear_schedule_with_warmup，因此使用transformers 2.1.1的记得改一下代码
+- transformers 2.2.0里面已经把WarmupLinearSchedule方法替换成了get_linear_schedule_with_warmup，因此目前先使用transformers 2.1.1(函数功能没有变化只是输入参数变了一下)
