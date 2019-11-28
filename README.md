@@ -10,7 +10,7 @@ Based on the script [`run_multiple_choice.py`]().
 
 ### Fine-tuning on Arc Challenge 
 
-- 以zyq添加的Roberta模型为例
+- 以添加的Roberta模型为例
 
 ```bash
 CUDA_VISIBLE_DEVICES=2,3 python run_multiple_choice.py \
