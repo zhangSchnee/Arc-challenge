@@ -6,27 +6,29 @@ Based on the script [`run_multiple_choice.py`]().
 
 - python 3.7(conda activate base)
 - transformers 2.2.0
-
+- c4130-008 上编号为2,3的两块GPU
 
 ### Fine-tuning on Arc Challenge 
 
+- 以zyq添加的Roberta模型为例
+
 ```bash
-#using google corpus
-export ARC_DIR=/home/tsinghuaee08/Team21/Arc-Challenge/ARC-V1-Feb2018-2/google_corpus
-python run_multiple_choice.py \
+CUDA_VISIBLE_DEVICES=2,3 python run_multiple_choice.py \
 --model_type roberta \
 --task_name arc \
---model_name_or_path roberta-base \
+--config_name roberta-base \
+--tokenizer_name roberta-base \
+--model_name_or_path /home/tsinghuaee08/Team21/Arc-challenge/PretainingModel/roberta_base_pytorch_model \
 --do_train \
 --do_eval \
 --do_lower_case \
 --data_dir $ARC_DIR \
 --learning_rate 5e-5 \
 --num_train_epochs 3 \
---max_seq_length 512 \
+--max_seq_length 256 \
 --output_dir models_output/arc_roberta_base \
---per_gpu_eval_batch_size=16 \
---per_gpu_train_batch_size=16 \
+--per_gpu_eval_batch_size=4 \
+--per_gpu_train_batch_size=4 \
 --gradient_accumulation_steps 2 \
 --overwrite_output
 ```
@@ -34,13 +36,14 @@ Training with the defined hyper-parameters yields the following results:
 
 ```
 ***** Eval results *****
-eval_acc = XXXXXXXXXX
-eval_loss = XXXXXXXXX
+eval_acc = 0.5748175182481752
+eval_loss = 1.2000159872243705
 ```
 
-- --model_name_or_path roberta-base  给出的只是**roberta-base**这个模型名称，需要从hugging face 下载预训练实际的预训练模型
+- --model_name_or_path给出的是下载到本地的模型的路径
+- --config_name和--tokenizer_name给出的只是**roberta-base**这个模型config和tokenizer名称，需要从hugging face 下载实际的数据(不过这些数据会存放在models_output/arc_roberta_base/里面，第二次跑也可以直接用)
 - output_dir 命名规则:**models_output/+your model name**
-- 离线跑可以整个nohup
+- 离线跑可以使用nohup命令
 
 ### GPU Memory 爆掉了怎么办
 
@@ -53,6 +56,8 @@ gpu_tracker.track()
 #your code here for GPU memory usage 
 gpu_tracker.track()
 ```
+
+**一般来说是batch szie太大了，这个之后需要我们进一步对输入数据做一个压缩**
 
 ### 各个文件的作用
 
@@ -68,7 +73,7 @@ gpu_tracker.track()
 
 ### Schdule(11.27-12.4)
 
-- [ ] 一种预训练模型的搭建，在 run_multiple_choice.py 基础上做修改，代码命名为**your mode_multiple_choice.py**, 把pretraining model下载下来存在**model/your model**文件夹下面。
+- [ ] 一种预训练模型的搭建，在 run_multiple_choice.py 基础上做修改，代码命名为**your mode_multiple_choice.py**, 把pretraining model下载下来存在**PretainingModel/your model**文件夹下面(预训练的模型可以bert-large,xlnet等等)
 
 - [ ] 一种预训练模型的搭建，代码命名规则和模型文件存放如上所示
 
