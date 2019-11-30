@@ -281,6 +281,30 @@ class ArcProcessor(DataProcessor):
             id = data_raw["id"]
             options = question_choices["choices"] # choose len 4 only
             if len(options) == 4:
+                if 'para' not in options[0]:
+                    options[0]["para"] = ''
+                    print('-------------------------------')
+                    print(id)
+                    print(question)
+                    print('-------------------------------')
+                if 'para' not in options[1]:
+                    options[1]["para"] = ''
+                    print('-------------------------------')
+                    print(id)
+                    print(question)
+                    print('-------------------------------')
+                if 'para' not in options[2]:
+                    options[2]["para"] = ''
+                    print('-------------------------------')
+                    print(id)
+                    print(question)
+                    print('-------------------------------')
+                if 'para' not in options[3]:
+                    options[3]["para"] = ''
+                    print('-------------------------------')
+                    print(id)
+                    print(question)
+                    print('-------------------------------')
                 examples.append(
                     InputExample(
                         example_id = id,
