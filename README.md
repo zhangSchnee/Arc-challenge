@@ -13,6 +13,8 @@ Based on the script [`run_multiple_choice.py`]().
 - 以添加的Roberta模型为例
 
 ```bash
+#export ARC_DIR=/home/tsinghuaee08/Team21/Arc-challenge/ARC-V1-Feb2018-2/arc_corpus/
+export ARC_DIR=/home/tsinghuaee08/Team21/Arc-challenge/ARC-V1-Feb2018-2/google_corpus
 CUDA_VISIBLE_DEVICES=2,3 python run_multiple_choice.py \
 --model_type roberta \
 --task_name arc \
