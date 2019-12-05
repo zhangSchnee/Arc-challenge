@@ -75,15 +75,23 @@ gpu_tracker.track()
 
 ### Schdule(11.27-12.4)
 
-- [ ] 一种预训练模型的搭建，在 run_multiple_choice.py 基础上做修改，代码命名为**your mode_multiple_choice.py**, 把pretraining model下载下来存在**PretainingModel/your model**文件夹下面(预训练的模型可以bert-large,xlnet等等)
+- [x] 一种预训练模型的搭建，在 run_multiple_choice.py 基础上做修改，代码命名为**your mode_multiple_choice.py**, 把pretraining model下载下来存在**PretainingModel/your model**文件夹下面(预训练的模型可以bert-large,xlnet等等)
 
-- [ ] 一种预训练模型的搭建，代码命名规则和模型文件存放如上所示
+- [x] 一种预训练模型的搭建，代码命名规则和模型文件存放如上所示
 
-- [ ] **Race数据集**的下载，能够在run_multiple_choice.py上跑通；实现根据question_id就可找到对应问题的功能的函数。代码写在utils文件夹下。
+- [x] **Race数据集**的下载，能够在run_multiple_choice.py上跑通；实现根据question_id就可找到对应问题的功能的函数。代码写在utils文件夹下。
 
 - [ ] 根据arc_corpus的csv文件，实现根据question_id就可找到对应问题基本信息( 如类别年级)的函数；修改run_multiple_choice.py的evaluate部分加一个函数，实现查看哪些类别问题判断正确，哪些错误
 
 - [ ] emsemble方法的调研和初步实现
+### Schdule(12.5-12.12)
+- [ ] 模型训练流程的sh脚本实现，设想的命令格式sh ./a.sh -$Pretraining_model_path -$gpu_id，需要使用race,google corpus, arc challenge 三个数据集，同时每个数据集的参数可以参考[AristoBERTv7](https://leaderboard.allenai.org/arc/submission/bk5snmbvhqhm94h7heag)的fine-tuning detail
+- [ ] emsemble方法的实现
+- [ ] google_corpus与challenge set的question id对应关系，注：虽然google_corpus和challenge_set的问题格式一样，但google_corpus还可能包括了其他同格式的问题
+- [ ] 模型结构修改，下面是可能的一些思路和链接
+	-  [adversarial training](https://leaderboard.allenai.org/arc/submission/bm759jbgtd01h5bc609g)
+	-  [Pretraining model+max-out](https://leaderboard.allenai.org/arc/submission/bepv01boo3sm5l6fq4vg)
+	- 大概的想法就是在预训练模型输入里面该点东西或者是输出之后改点东西
 
 ### 目前已经遇到的bug
 - transformers 2.2.0里面已经把WarmupLinearSchedule方法替换成了get_linear_schedule_with_warmup，因此目前先使用transformers 2.1.1(函数功能没有变化只是输入参数变了一下)
