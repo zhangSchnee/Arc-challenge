@@ -1,6 +1,7 @@
-# Multiple Choice
+# Multiple Choice[Closed]
 
 Based on the script [`run_multiple_choice.py`]().
+感谢大家两个月的努力，这个项目已经完成了！
 
 ### 环境说明
 
@@ -83,12 +84,12 @@ gpu_tracker.track()
 
 - [ ] 根据arc_corpus的csv文件，实现根据question_id就可找到对应问题基本信息( 如类别年级)的函数；修改run_multiple_choice.py的evaluate部分加一个函数，实现查看哪些类别问题判断正确，哪些错误
 
-- [ ] emsemble方法的调研和初步实现
+- [x] emsemble方法的调研和初步实现
 ### Schdule(12.5-12.12)
-- [ ] 模型训练流程的sh脚本实现，设想的命令格式sh ./a.sh -$Pretraining_model_path -$gpu_id，需要使用race,google corpus, arc challenge 三个数据集，同时每个数据集的参数可以参考[AristoBERTv7](https://leaderboard.allenai.org/arc/submission/bk5snmbvhqhm94h7heag)的fine-tuning detail
+- [x] 模型训练流程的sh脚本实现，设想的命令格式sh ./a.sh -$Pretraining_model_path -$gpu_id，需要使用race,google corpus, arc challenge 三个数据集，同时每个数据集的参数可以参考[AristoBERTv7](https://leaderboard.allenai.org/arc/submission/bk5snmbvhqhm94h7heag)的fine-tuning detail
 - [ ] emsemble方法的实现
-- [ ] google_corpus与challenge set的question id对应关系，注：虽然google_corpus和challenge_set的问题格式一样，但google_corpus还可能包括了其他同格式的问题
-- [ ] 模型结构修改，下面是可能的一些思路和链接
+- [x] google_corpus与challenge set的question id对应关系，注：虽然google_corpus和challenge_set的问题格式一样，但google_corpus还可能包括了其他同格式的问题
+- [x] 模型结构修改，下面是可能的一些思路和链接
 	-  [adversarial training](https://leaderboard.allenai.org/arc/submission/bm759jbgtd01h5bc609g)
 	-  [Pretraining model+max-out](https://leaderboard.allenai.org/arc/submission/bepv01boo3sm5l6fq4vg)
 	- 大概的想法就是在预训练模型输入里面该点东西或者是输出之后改点东西
